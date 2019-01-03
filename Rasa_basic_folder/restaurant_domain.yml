@@ -3,10 +3,16 @@ slots:
     type: text
   cuisine:
     type: text
+  pricerange:
+    type: text
+  email:
+    type: text
 
 entities:
 - location
 - cuisine
+- pricerange
+- email
 
 intents:
  - greet
@@ -57,6 +63,10 @@ templates:
         payload: "Rs. 300 to 700"
       - title: "More than 700"
         payload: "More than 700"        
+  utter_ask_should_send_email: 
+    - "Should I send you details of all the restaurants on email?"
+  utter_ask_email_id: 
+    - "To what email id should I send it to?"
       
 actions:
 - utter_greet
@@ -65,4 +75,6 @@ actions:
 - utter_ask_howcanhelp
 - utter_ask_location
 - utter_ask_cuisine
+- utter_ask_should_send_email
+- utter_ask_email_id
 - actions.ActionSearchRestaurants
