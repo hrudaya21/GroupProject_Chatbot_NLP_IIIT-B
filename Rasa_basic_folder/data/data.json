@@ -69,6 +69,11 @@
         "entities": []
       },
       {
+        "text": "hola",
+        "intent": "greet",
+        "entities": []
+      },
+      {
         "text": "yes",
         "intent": "affirm",
         "entities": []
@@ -540,6 +545,90 @@
             "end": 42,
             "value": "pune",
             "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I will prefer Chinese",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I will prefer Mexican",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "Mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I will prefer Italian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "Italian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I will prefer American",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "American",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I will prefer Thai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "Thai",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I will prefer South Indian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 26,
+            "value": "South Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I will prefer North Indian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 26,
+            "value": "North Indian",
+            "entity": "cuisine"
           }
         ]
       }

@@ -32,8 +32,14 @@ templates:
       buttons:
       - title: "Chinese"
         payload: "Chinese"
+      - title: "Mexican"
+        payload: "Mexican"
       - title: "Italian"
-        payload: "Italian"
+        payload: "Italian"        
+      - title: "American"
+        payload: "American"
+      - title: "Thai"
+        payload: "Thai"
       - title: "South Indian"
         payload: "South Indian"
       - title: "North Indian"
@@ -42,7 +48,16 @@ templates:
     - "how can I help you?"
   utter_ask_location:
     - "In what location?"
-
+  utter_ask_budget: 
+    - text: "What's the average budget for two people?"
+      buttons:
+      - title: "Lesser than Rs. 300"
+        payload: "Lesser than Rs. 300"
+      - title: "Rs. 300 to 700"
+        payload: "Rs. 300 to 700"
+      - title: "More than 700"
+        payload: "More than 700"        
+      
 actions:
 - utter_greet
 - utter_goodbye
