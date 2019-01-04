@@ -6,6 +6,9 @@ from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 import zomatopy
 import json
+# Import smtplib for the actual sending function
+import smtplib
+import traceback
 
 class ActionSearchRestaurants(Action):
 	def name(self):
@@ -41,5 +44,32 @@ class ActionSendEmail(Action):
         def run(self, dispatcher, tracker, domain):
             email_message = tracker.get_slot("restraurant_results_for_email_message")
             email_id = tracker.get_slot("email")
-# Add code to send email
+# Code to send email
+            gmail_user = 'kurmakshetra@gmail.com'
+            gmail_password = 'pho12kus'
+
+            sent_from = gmail_user
+            to = [email_id]
+            subject = 'Your Restraurant Search Results'
+            body = email_message
+
+            email_text = """\
+                From: %s
+                To: %s
+                Subject: %s
+                
+                %s
+                """ % (sent_from, ", ".join(to), subject, body)
+
+            try:
+                server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+                server.ehlo()
+                server.login(gmail_user, gmail_password)
+                server.sendmail(sent_from, to, email_text)
+                server.close()
+                print('Email sent!')
+            except:
+                print('Something went wrong...')
+                traceback.print_exc()
+
             dispatcher.utter_message("Sent. Bon Appetit!")
