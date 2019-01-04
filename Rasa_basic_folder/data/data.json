@@ -631,6 +631,122 @@
             "entity": "cuisine"
           }
         ]
+      },
+      {
+        "text": "send me list of restaurant at hrishikesh@gmail.com",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 30,
+            "end": 50,
+            "value": "hrishikesh@gmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "my email id is abc@gmail.com",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 28,
+            "value": "abc@gmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "find restaurants in pune in range 300-700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "pune",
+            "entity": "location"
+          },
+          {
+            "start": 34,
+            "end": 41,
+            "value": "300-700",
+            "entity": "pricerange"
+          }
+        ]
+      },
+      {
+        "text": "email me list of chinese restaurants in pune between range 300 to 700 at abcd@efg.com",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "chinese",
+            "entity": "cuisine"
+          },
+          {
+            "start": 40,
+            "end": 44,
+            "value": "pune",
+            "entity": "location"
+          },
+          {
+            "start": 73,
+            "end": 85,
+            "value": "abcd@efg.com",
+            "entity": "email"
+          },
+          {
+            "start": 59,
+            "end": 69,
+            "value": "300 to 700",
+            "entity": "pricerange"
+          }
+        ]
+      },
+      {
+        "text": "find restaurants in Amritsar",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "Amritsar",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "no",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "dont",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "don't",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "please do not send",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "my range is 400-900",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "400-900",
+            "entity": "pricerange"
+          }
+        ]
       }
     ]
   }
