@@ -29,7 +29,17 @@ class ActionSearchRestaurants(Action):
 		else:
 			for restaurant in d['restaurants']:
 				response=response+ "Found "+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+"\n"
+			SlotSet('restraurant_results_for_email_message', response)
 		
 		dispatcher.utter_message("-----"+response)
 		return [SlotSet('location',loc)]
 
+class ActionSendEmail(Action):
+    def name(self):
+        return 'send_email'
+        
+        def run(self, dispatcher, tracker, domain):
+            email_message = tracker.get_slot("restraurant_results_for_email_message")
+            email_id = tracker.get_slot("email")
+# Add code to send email
+            dispatcher.utter_message("Sent. Bon Appetit!")

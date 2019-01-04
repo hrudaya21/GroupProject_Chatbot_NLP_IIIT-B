@@ -21,7 +21,7 @@ intents:
  - goodbye
  - thankyou
  - restaurant_search
-
+ - send_email
 
 templates:
   utter_greet:
@@ -78,3 +78,4 @@ actions:
 - utter_ask_should_send_email
 - utter_ask_email_id
 - actions.ActionSearchRestaurants
+- actions.ActionSendEmail
