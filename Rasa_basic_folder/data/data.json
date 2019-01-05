@@ -747,6 +747,102 @@
             "entity": "pricerange"
           }
         ]
+      },
+      {
+        "text": "delhi",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Bangalore",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Bangalore",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "bengaluru",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "bengaluru",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "More than 700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 13,
+            "value": "700",
+            "entity": "pricerange"
+          }
+        ]
+      },
+      {
+        "text": "In 300 to 700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 13,
+            "value": "300 to 700",
+            "entity": "pricerange"
+          }
+        ]
+      },
+      {
+        "text": "less than 300",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 13,
+            "value": "300",
+            "entity": "pricerange"
+          }
+        ]
+      },
+      {
+        "text": "Between 300-700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "300-700",
+            "entity": "pricerange"
+          }
+        ]
+      },
+      {
+        "text": "300-700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "300-700",
+            "entity": "pricerange"
+          }
+        ]
       }
     ]
   }

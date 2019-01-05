@@ -13,29 +13,54 @@ import traceback
 class ActionSearchRestaurants(Action):
 	def name(self):
 		return 'action_restaurant'
-		
 	def run(self, dispatcher, tracker, domain):
 		config={ "user_key":"6ce88a5ec1419e335afa1c7f92f4b739"}
 		zomato = zomatopy.initialize_app(config)
 		loc = tracker.get_slot('location')
 		cuisine = tracker.get_slot('cuisine')
+		budget = tracker.get_slot('pricerange')
+		pricerangeCategory = -1
+		if( (budget.find("300") >= 0) & (budget.find("700") >= 0 ) ):
+			pricerangeCategory = 1
+		elif( (budget.find("300") >= 0) ):
+			pricerangeCategory = 0
+		elif( (budget.find("700") >= 0) ):
+			pricerangeCategory = 2
+		else:
+			pricerangeCategory = -1
 		location_detail=zomato.get_location(loc, 1)
 		d1 = json.loads(location_detail)
 		lat=d1["location_suggestions"][0]["latitude"]
 		lon=d1["location_suggestions"][0]["longitude"]
 		cuisines_dict={'bakery':5,'chinese':25,'cafe':30,'italian':55,'biryani':7,'north indian':50,'south indian':85}
+		#if pricerangeCategory == -1:
 		results=zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), 5)
 		d = json.loads(results)
 		response=""
 		if d['results_found'] == 0:
 			response= "no results"
 		else:
+			count = 0
 			for restaurant in d['restaurants']:
-				response=response+ "Found "+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+"\n"
+				if(count == 5):
+					break
+				cost = restaurant.get('restaurant').get('average_cost_for_two')
+				if(pricerangeCategory == 0): # <=300
+					if(not cost <= 300):
+						continue
+				elif(pricerangeCategory == 2): # >=700
+					if(not cost >= 700):
+						continue
+				elif(pricerangeCategory == 1): # 300-700
+					if(not ((cost > 300) & (cost < 700))):
+						continue
+				response=response+ "Found "+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " Cost: " + str(cost) + "\n"
+				count = count + 1
 			SlotSet('restraurant_results_for_email_message', response)
 		
 		dispatcher.utter_message("-----"+response)
 		return [SlotSet('location',loc)]
+		
 
 class ActionSendEmail(Action):
     def name(self):
