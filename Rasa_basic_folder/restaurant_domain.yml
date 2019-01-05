@@ -80,3 +80,4 @@ actions:
 - utter_ask_email_id
 - actions.ActionSearchRestaurants
 - actions.ActionSendEmail
+- actions.ActionVerifyLocation

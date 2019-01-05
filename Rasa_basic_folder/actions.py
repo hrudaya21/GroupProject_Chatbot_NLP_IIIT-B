@@ -10,6 +10,125 @@ import json
 import smtplib
 import traceback
 
+
+class ActionVerifyLocation(Action):
+	def name(self):
+		return 'verify_location'
+	def run(self, dispatcher, tracker, domain):
+		cityname = tracker.get_slot("location")
+		supportedCities = [
+			"Ahmedabad",
+			"Bangalore",
+			"Chennai",
+			"Delhi",
+			"Hyderabad",
+			"Kolkata",
+			"Mumbai",
+			"Pune",
+			"Agra",
+			"Ajmer",
+			"Aligarh",
+			"Amravati",
+			"Amritsar",
+			"Asansol",
+			"Aurangabad",
+			"Bareilly",
+			"Belgaum",
+			"Bhavnagar",
+			"Bhiwandi",
+			"Bhopal",
+			"Bhubaneswar",
+			"Bikaner",
+			"Bokaro Steel City",
+			"Chandigarh",
+			"Coimbatore",
+			"Cuttack",
+			"Dehradun",
+			"Dhanbad",
+			"Durg-Bhilai Nagar",
+			"Durgapur",
+			"Erode",
+			"Faridabad",
+			"Firozabad",
+			"Ghaziabad",
+			"Gorakhpur",
+			"Gulbarga",
+			"Guntur",
+			"Gurgaon",
+			"Guwahati‚ Gwalior",
+			"Hubli-Dharwad",
+			"Indore",
+			"Jabalpur",
+			"Jaipur",
+			"Jalandhar",
+			"Jammu",
+			"Jamnagar",
+			"Jamshedpur",
+			"Jhansi",
+			"Jodhpur",
+			"Kannur",
+			"Kanpur",
+			"Kakinada",
+			"Kochi",
+			"Kottayam",
+			"Kolhapur",
+			"Kollam",
+			"Kota",
+			"Kozhikode",
+			"Kurnool",
+			"Lucknow",
+			"Ludhiana",
+			"Madurai",
+			"Malappuram",
+			"Mathura",
+			"Goa",
+			"Mangalore",
+			"Meerut",
+			"Moradabad",
+			"Mysore",
+			"Nagpur",
+			"Nanded",
+			"Nashik",
+			"Nellore",
+			"Noida",
+			"Palakkad",
+			"Patna",
+			"Pondicherry",
+			"Prayagraj",
+			"Raipur",
+			"Rajkot",
+			"Rajahmundry",
+			"Ranchi",
+			"Rourkela",
+			"Salem",
+			"Sangli",
+			"Siliguri",
+			"Solapur",
+			"Srinagar",
+			"Sultanpur",
+			"Surat",
+			"Thiruvananthapuram",
+			"Thrissur",
+			"Tiruchirappalli",
+			"Tirunelveli",
+			"Tiruppur",
+			"Ujjain",
+			"Bijapur",
+			"Vadodara",
+			"Varanasi",
+			"Vasai-Virar City",
+			"Vijayawada",
+			"Visakhapatnam",
+			"Warangal"
+			]
+		if cityname.lower() not in [name.lower() for name in supportedCities]:
+			dispatcher.utter_message("We do not operate in that area yet.")
+			dispatcher.utter_template("utter_ask_location", tracker)
+			return [SlotSet("location", None)]
+		else:
+			dispatcher.utter_message("City Found.")
+	
+
 class ActionSearchRestaurants(Action):
 	def name(self):
 		return 'action_restaurant'
@@ -60,41 +179,46 @@ class ActionSearchRestaurants(Action):
 		
 		dispatcher.utter_message("-----"+response)
 		return [SlotSet('location',loc)]
-		
 
 class ActionSendEmail(Action):
     def name(self):
         return 'send_email'
         
-        def run(self, dispatcher, tracker, domain):
-            email_message = tracker.get_slot("restraurant_results_for_email_message")
-            email_id = tracker.get_slot("email")
+    def run(self, dispatcher, tracker, domain):
+        email_message = tracker.get_slot("restraurant_results_for_email_message")
+        email_id = tracker.get_slot("email")
 # Code to send email
-            gmail_user = 'kurmakshetra@gmail.com'
-            gmail_password = 'pho12kus'
+        gmail_user = 'kurmakshetra@gmail.com'
+        gmail_password = 'pho12kus'
 
-            sent_from = gmail_user
-            to = [email_id]
-            subject = 'Your Restraurant Search Results'
-            body = email_message
+        sent_from = gmail_user
+        to = [email_id]
+        subject = 'Your Restraurant Search Results'
+        body = email_message
 
-            email_text = """\
-                From: %s
-                To: %s
-                Subject: %s
-                
-                %s
-                """ % (sent_from, ", ".join(to), subject, body)
+        email_text = """\
+            From: %s
+            To: %s
+            Subject: %s
+            
+            %s
+            """ % (sent_from, ", ".join(to), subject, body)
 
-            try:
-                server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-                server.ehlo()
-                server.login(gmail_user, gmail_password)
-                server.sendmail(sent_from, to, email_text)
-                server.close()
-                print('Email sent!')
-            except:
-                print('Something went wrong...')
-                traceback.print_exc()
+        try:
+            server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+            server.ehlo()
+            server.login(gmail_user, gmail_password)
+            server.sendmail(sent_from, to, email_text)
+            server.close()
+            print('Email sent!')
+        except:
+            print('Something went wrong...')
+            traceback.print_exc()
 
-            dispatcher.utter_message("Sent. Bon Appetit!")
+        dispatcher.utter_message("Sent. Bon Appetit!")
+
+
+			
+		
+
+
