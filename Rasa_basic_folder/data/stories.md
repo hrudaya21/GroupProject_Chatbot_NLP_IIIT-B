@@ -144,3 +144,24 @@
     - utter_ask_should_send_email
 * deny
     - export	
+## Generated Story 5793991498973845777
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "bengaluru"}
+    - slot{"location": "bengaluru"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
+    - action_restaurant
+    - slot{"location": "bengaluru"}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* send_email
+    - send_email
+    - export	
