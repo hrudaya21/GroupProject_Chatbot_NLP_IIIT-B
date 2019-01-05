@@ -27,6 +27,120 @@
         ]
       }
     ],
+    "lookup_tables": [
+      {
+        "name": "cuisine",
+        "elements": ["Chinese", "Mexican", "Italian", "American", "Thai", "South Indian", "North Indian"]
+      },
+      {
+        "name": "location",
+        "elements": [
+          "Ahmedabad",
+          "Bangalore",
+          "Chennai",
+          "Delhi",
+          "Hyderabad",
+          "Kolkata",
+          "Mumbai",
+          "Pune",
+          "Agra",
+          "Ajmer",
+          "Aligarh",
+          "Amravati",
+          "Amritsar",
+          "Asansol",
+          "Aurangabad",
+          "Bareilly",
+          "Belgaum",
+          "Bhavnagar",
+          "Bhiwandi",
+          "Bhopal",
+          "Bhubaneswar",
+          "Bikaner",
+          "Bokaro Steel City",
+          "Chandigarh",
+          "Coimbatore",
+          "Cuttack",
+          "Dehradun",
+          "Dhanbad",
+          "Durg-Bhilai Nagar",
+          "Durgapur",
+          "Erode",
+          "Faridabad",
+          "Firozabad",
+          "Ghaziabad",
+          "Gorakhpur",
+          "Gulbarga",
+          "Guntur",
+          "Gurgaon",
+          "Guwahati‚ Gwalior",
+          "Hubli-Dharwad",
+          "Indore",
+          "Jabalpur",
+          "Jaipur",
+          "Jalandhar",
+          "Jammu",
+          "Jamnagar",
+          "Jamshedpur",
+          "Jhansi",
+          "Jodhpur",
+          "Kannur",
+          "Kanpur",
+          "Kakinada",
+          "Kochi",
+          "Kottayam",
+          "Kolhapur",
+          "Kollam",
+          "Kota",
+          "Kozhikode",
+          "Kurnool",
+          "Lucknow",
+          "Ludhiana",
+          "Madurai",
+          "Malappuram",
+          "Mathura",
+          "Goa",
+          "Mangalore",
+          "Meerut",
+          "Moradabad",
+          "Mysore",
+          "Nagpur",
+          "Nanded",
+          "Nashik",
+          "Nellore",
+          "Noida",
+          "Palakkad",
+          "Patna",
+          "Pondicherry",
+          "Prayagraj",
+          "Raipur",
+          "Rajkot",
+          "Rajahmundry",
+          "Ranchi",
+          "Rourkela",
+          "Salem",
+          "Sangli",
+          "Siliguri",
+          "Solapur",
+          "Srinagar",
+          "Sultanpur",
+          "Surat",
+          "Thiruvananthapuram",
+          "Thrissur",
+          "Tiruchirappalli",
+          "Tirunelveli",
+          "Tiruppur",
+          "Ujjain",
+          "Bijapur",
+          "Vadodara",
+          "Varanasi",
+          "Vasai-Virar City",
+          "Vijayawada",
+          "Visakhapatnam",
+          "Warangal"
+        ]
+      }
+    ],
     "common_examples": [
       {
         "text": "hey",
@@ -269,18 +383,6 @@
         ]
       },
       {
-        "text": "in London",
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 3,
-            "end": 9,
-            "value": "London",
-            "entity": "location"
-          }
-        ]
-      },
-      {
         "text": "South Indian",
         "intent": "restaurant_search",
         "entities": [
@@ -360,42 +462,6 @@
             "start": 14,
             "end": 19,
             "value": "Italy",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "in delhi",
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 3,
-            "end": 8,
-            "value": "delhi",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "In Delhi",
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 3,
-            "end": 8,
-            "value": "Delhi",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "In Delhi.",
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 3,
-            "end": 8,
-            "value": "Delhi",
             "entity": "location"
           }
         ]
@@ -841,6 +907,66 @@
             "end": 7,
             "value": "300-700",
             "entity": "pricerange"
+          }
+        ]
+      },
+      {
+        "text": "Pune",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Pune",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Bangalore",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Bangalore",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Delhi",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Chennai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Chennai",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Agra",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Agra",
+            "entity": "location"
           }
         ]
       }
