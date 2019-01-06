@@ -7,12 +7,15 @@ slots:
     type: text
   email:
     type: text
+  restraurant_results_for_email_message:
+    type: text
 
 entities:
 - location
 - cuisine
 - pricerange
 - email
+- restraurant_results_for_email_message
 
 intents:
  - greet

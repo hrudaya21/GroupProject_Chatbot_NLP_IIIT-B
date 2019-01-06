@@ -165,3 +165,98 @@
 * send_email
     - send_email
     - export	
+## Generated Story -4119916223930012371
+* greet{"location": "hola"}
+    - slot{"location": "hola"}
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "italian"}
+    - slot{"cuisine": "italian"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
+    - action_restaurant
+    - slot{"location": "bangalore"}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
+    - send_email
+    - export
+
+## Generated Story 4371494193400271207
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
+    - action_restaurant
+    - slot{"location": "bangalore"}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
+    - send_email
+    - export
+## Generated Story -6574399902414284621
+* greet
+    - utter_greet
+* restaurant_search{"location": "rishikesh"}
+    - slot{"location": "rishikesh"}
+    - verify_location
+    - slot{"location": null}
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
+    - action_restaurant
+    - slot{"location": "bangalore"}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
+    - send_email
+    - export
+	
+## Generated Story 8455316801529394086
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "hyderabad"}
+    - slot{"location": "hyderabad"}
+    - verify_location
+    - utter_ask_cuisine
+* restaurant_search
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
+    - action_restaurant
+    - slot{"location": "hyderabad"}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
+    - send_email
+    - export
