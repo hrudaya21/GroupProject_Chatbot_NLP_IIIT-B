@@ -344,3 +344,50 @@
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
     - export
+## Generated Story -5669288759055082475
+* greet
+    - utter_greet
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "Found Asia Kitchen By Mainland China in 136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore Cost: 1500\nFound High Ultra Lounge in 26/1 , 31st Floor, Dr. Rajkumar Road, World Trade Centre, Brigade Gateway Campus, Malleshwaram, Bangalore Cost: 2600\nFound Yo! Chow in 90/3 Sri Sapthagiri Complex,Outer ring road marathahalli,Opp to innovative Multiplex, Marathahalli, Bangalore Cost: 800\nFound Yauatcha in 1 MG Mall, MG Road, Bangalore Cost: 2800\nFound Mainland China in 28/2, 1st Floor, Siddapura, Whitefield Main Road, Whitefield, Bangalore near Dmart Cost: 1700\n"}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
+    - send_email
+    - export
+
+## Generated Story 8414988504950852106
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "Found Asia Kitchen By Mainland China in 136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore Cost: 1500\nFound High Ultra Lounge in 26/1 , 31st Floor, Dr. Rajkumar Road, World Trade Centre, Brigade Gateway Campus, Malleshwaram, Bangalore Cost: 2600\nFound Yo! Chow in 90/3 Sri Sapthagiri Complex,Outer ring road marathahalli,Opp to innovative Multiplex, Marathahalli, Bangalore Cost: 800\nFound Yauatcha in 1 MG Mall, MG Road, Bangalore Cost: 2800\nFound Mainland China in 28/2, 1st Floor, Siddapura, Whitefield Main Road, Whitefield, Bangalore near Dmart Cost: 1700\n"}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* restaurant_search{"email": "amirisetty.vijayaraghavan@gmail.com"}
+    - slot{"email": "amirisetty.vijayaraghavan@gmail.com"}
+    - send_email
+    - export

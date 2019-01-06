@@ -101,7 +101,7 @@ class ActionSearchRestaurants(Action):
 			SlotSet('restraurant_results_for_email_message', response)
 		
 		dispatcher.utter_message("-----"+response)
-		return [SlotSet('location',loc)]
+		return [SlotSet('restraurant_results_for_email_message',response)]
 
 class ActionSendEmail(Action):
     def name(self):
