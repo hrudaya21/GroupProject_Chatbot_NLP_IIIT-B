@@ -12,121 +12,44 @@ import traceback
 
 
 class ActionVerifyLocation(Action):
+	def edits_one(self,word):
+	    "Create all edits that are one edit away from `word`."
+	    alphabets    = 'abcdefghijklmnopqrstuvwxyz'
+	    splits     = [(word[:i], word[i:])                   for i in range(len(word) + 1)]
+	    deletes    = [left + right[1:]                       for left, right in splits if right]
+	    inserts    = [left + c + right                       for left, right in splits for c in alphabets]
+	    replaces   = [left + c + right[1:]                   for left, right in splits if right for c in alphabets]
+	    transposes = [left + right[1] + right[0] + right[2:] for left, right in splits if len(right)>1]
+	    return set(deletes + inserts + replaces + transposes)
+
+	def edits_two(self,word):
+	    "Create all edits that are two edits away from `word`."
+	    return (e2 for e1 in edits_one(word) for e2 in edits_one(e1))
+	def known(self,words):
+	    "The subset of `words` that appear in the `all_words`."
+	    supportedCities = ['ahmedabad', 'bangalore', 'chennai', 'delhi', 'hyderabad', 'kolkata', 'mumbai', 'pune', 'agra', 'ajmer', 'aligarh', 'amravati', 'amritsar', 'asansol', 'aurangabad', 'bareilly', 'belgaum', 'bhavnagar', 'bhiwandi', 'bhopal', 'bhubaneswar', 'bikaner', 'bokaro steel city', 'chandigarh', 'coimbatore', 'cuttack', 'dehradun', 'dhanbad', 'durg-bhilai nagar', 'durgapur', 'erode', 'faridabad', 'firozabad', 'ghaziabad', 'gorakhpur', 'gulbarga', 'guntur', 'gurgaon', 'guwahati‚ gwalior', 'hubli-dharwad', 'indore', 'jabalpur', 'jaipur', 'jalandhar', 'jammu', 'jamnagar', 'jamshedpur', 'jhansi', 'jodhpur', 'kannur', 'kanpur', 'kakinada', 'kochi', 'kottayam', 'kolhapur', 'kollam', 'kota', 'kozhikode', 'kurnool', 'lucknow', 'ludhiana', 'madurai', 'malappuram', 'mathura', 'goa', 'mangalore', 'meerut', 'moradabad', 'mysore', 'nagpur', 'nanded', 'nashik', 'nellore', 'noida', 'palakkad', 'patna', 'pondicherry', 'prayagraj', 'raipur', 'rajkot', 'rajahmundry', 'ranchi', 'rourkela', 'salem', 'sangli', 'siliguri', 'solapur', 'srinagar', 'sultanpur', 'surat', 'thiruvananthapuram', 'thrissur', 'tiruchirappalli', 'tirunelveli', 'tiruppur', 'ujjain', 'bijapur', 'vadodara', 'varanasi', 'vasai-virar city', 'vijayawada', 'visakhapatnam', 'warangal']
+	    return set(word for word in words if word in supportedCities)
+
+	def our_possible_corrections(self,word):
+	    word = word.lower()
+	    return (self.known([word]) or self.known(self.edits_one(word)) or self.known(self.edits_two(word)))
+	    
+
 	def name(self):
 		return 'verify_location'
+
 	def run(self, dispatcher, tracker, domain):
 		cityname = tracker.get_slot("location")
-		supportedCities = [
-			"Ahmedabad",
-			"Bangalore",
-			"Chennai",
-			"Delhi",
-			"Hyderabad",
-			"Kolkata",
-			"Mumbai",
-			"Pune",
-			"Agra",
-			"Ajmer",
-			"Aligarh",
-			"Amravati",
-			"Amritsar",
-			"Asansol",
-			"Aurangabad",
-			"Bareilly",
-			"Belgaum",
-			"Bhavnagar",
-			"Bhiwandi",
-			"Bhopal",
-			"Bhubaneswar",
-			"Bikaner",
-			"Bokaro Steel City",
-			"Chandigarh",
-			"Coimbatore",
-			"Cuttack",
-			"Dehradun",
-			"Dhanbad",
-			"Durg-Bhilai Nagar",
-			"Durgapur",
-			"Erode",
-			"Faridabad",
-			"Firozabad",
-			"Ghaziabad",
-			"Gorakhpur",
-			"Gulbarga",
-			"Guntur",
-			"Gurgaon",
-			"Guwahati‚ Gwalior",
-			"Hubli-Dharwad",
-			"Indore",
-			"Jabalpur",
-			"Jaipur",
-			"Jalandhar",
-			"Jammu",
-			"Jamnagar",
-			"Jamshedpur",
-			"Jhansi",
-			"Jodhpur",
-			"Kannur",
-			"Kanpur",
-			"Kakinada",
-			"Kochi",
-			"Kottayam",
-			"Kolhapur",
-			"Kollam",
-			"Kota",
-			"Kozhikode",
-			"Kurnool",
-			"Lucknow",
-			"Ludhiana",
-			"Madurai",
-			"Malappuram",
-			"Mathura",
-			"Goa",
-			"Mangalore",
-			"Meerut",
-			"Moradabad",
-			"Mysore",
-			"Nagpur",
-			"Nanded",
-			"Nashik",
-			"Nellore",
-			"Noida",
-			"Palakkad",
-			"Patna",
-			"Pondicherry",
-			"Prayagraj",
-			"Raipur",
-			"Rajkot",
-			"Rajahmundry",
-			"Ranchi",
-			"Rourkela",
-			"Salem",
-			"Sangli",
-			"Siliguri",
-			"Solapur",
-			"Srinagar",
-			"Sultanpur",
-			"Surat",
-			"Thiruvananthapuram",
-			"Thrissur",
-			"Tiruchirappalli",
-			"Tirunelveli",
-			"Tiruppur",
-			"Ujjain",
-			"Bijapur",
-			"Vadodara",
-			"Varanasi",
-			"Vasai-Virar City",
-			"Vijayawada",
-			"Visakhapatnam",
-			"Warangal"
-			]
-		if cityname.lower() not in [name.lower() for name in supportedCities]:
+		correctedCity = list(self.our_possible_corrections(cityname))
+		dispatcher.utter_message("found correctedCity")
+		if len(correctedCity) == 0:
 			dispatcher.utter_message("We do not operate in that area yet.")
 			dispatcher.utter_template("utter_ask_location", tracker)
 			return [SlotSet("location", None)]
 		else:
-			dispatcher.utter_message("City Found.")
+			dispatcher.utter_message("City Found: ")
+			dispatcher.utter_message(correctedCity[0])
+			return [SlotSet("location", correctedCity[0])]
 	
 
 class ActionSearchRestaurants(Action):
