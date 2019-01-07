@@ -391,3 +391,72 @@
     - slot{"email": "amirisetty.vijayaraghavan@gmail.com"}
     - send_email
     - export
+## Generated Story 4887725827197572356
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "ahmedabad"}
+    - slot{"location": "ahmedabad"}
+    - verify_location
+    - slot{"location": "ahmedabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "300"}
+    - slot{"pricerange": "300"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": ""}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
+    - send_email
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "ahmedabad"}
+    - slot{"location": "ahmedabad"}
+    - verify_location
+    - slot{"location": "ahmedabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "300 to 700"}
+    - slot{"pricerange": "300 to 700"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "Found RP's Pizzeria in Shop 5, Ground Floor, Axiom 2, SP Ring Road, Bopal, Ahmedabad Cost: 500\n"}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
+    - send_email
+    - export
+## Generated Story -4361798139229803469
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "ahmedabad"}
+    - slot{"location": "ahmedabad"}
+    - verify_location
+    - slot{"location": "ahmedabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "Found The Esplendido Cafe in Ground Floor & First Floor, Opposite Samartheshwar Mahadev, Near V-Mart, Law Garden Cross Road, Navrangpura, Ahmedabad Cost: 800\nFound Makeba - The Lounge Cafe in 8th Floor, 3rd Eye Vision, Opposite Shivalik Plaza, Panjrapol Circle, IIM Road, Vastrapur, Ahmedabad Cost: 1000\nFound Huber & Holly in 7 B, below pakwan restaurnat, pakwan cross road, Boadakdev, Ahmedabad  Cost: 700\nFound Bogarosa in 299/1, Behind Rajpath Club, Beside 9th Avenue Building, Bodakdev, Ahmedabad Cost: 800\n"}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
+    - send_email
