@@ -74,7 +74,7 @@ class ActionSearchRestaurants(Action):
 		d1 = json.loads(location_detail)
 		lat=d1["location_suggestions"][0]["latitude"]
 		lon=d1["location_suggestions"][0]["longitude"]
-		cuisines_dict={'bakery':5,'chinese':25,'cafe':30,'italian':55,'biryani':7,'north indian':50,'south indian':85}
+		cuisines_dict={'Chinese':25,'Mexican':73 ,'Italian':55 ,'American':1 ,'Thai':95,'north indian':50,'south indian':85}
 		#if pricerangeCategory == -1:
 		results=zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), 5)
 		d = json.loads(results)
