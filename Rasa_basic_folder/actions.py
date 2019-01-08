@@ -40,8 +40,13 @@ class ActionVerifyLocation(Action):
 
 	def run(self, dispatcher, tracker, domain):
 		cityname = tracker.get_slot("location")
-		correctedCity = list(self.our_possible_corrections(cityname))
-		dispatcher.utter_message("found correctedCity")
+		if((cityname is not None) and (cityname.strip())):
+			correctedCity = list(self.our_possible_corrections(cityname.strp()))
+		else:
+			dispatcher.utter_message("slot for location is empty")
+			dispatcher.utter_template("utter_ask_location", tracker)
+			return [SlotSet("location", None)]
+
 		if len(correctedCity) == 0:
 			dispatcher.utter_message("We do not operate in that area yet.")
 			dispatcher.utter_template("utter_ask_location", tracker)
