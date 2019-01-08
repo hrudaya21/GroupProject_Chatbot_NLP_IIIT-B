@@ -44,7 +44,7 @@ class ActionVerifyLocation(Action):
 	def run(self, dispatcher, tracker, domain):
 		cityname = tracker.get_slot("location")
 		if((cityname is not None) and (cityname.strip())):
-			correctedCity = list(self.our_possible_corrections(cityname.strp()))
+			correctedCity = list(self.our_possible_corrections(cityname.strip()))
 		else:
 			dispatcher.utter_message("slot for location is empty")
 			dispatcher.utter_template("utter_ask_location", tracker)
@@ -120,7 +120,7 @@ class ActionSendEmail(Action):
         email_id = tracker.get_slot("email")
 # Code to send email
 
-        msg = MIMEText(string)
+        msg = MIMEText(email_message)
 
         msg['Subject'] = 'Your restraurant search results'
         msg['From'] = 'restraurantbot@zomato.com'
