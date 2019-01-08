@@ -8,6 +8,9 @@ import zomatopy
 import json
 # Import smtplib for the actual sending function
 import smtplib
+import email
+from email.mime.text import MIMEText
+
 import traceback
 
 
@@ -116,28 +119,24 @@ class ActionSendEmail(Action):
         email_message = tracker.get_slot("restraurant_results_for_email_message")
         email_id = tracker.get_slot("email")
 # Code to send email
-        gmail_user = 'kurmakshetra@gmail.com'
-        gmail_password = 'pho12kus'
 
-        sent_from = gmail_user
-        to = [email_id]
-        subject = 'Your Restraurant Search Results'
-        body = email_message
+        msg = MIMEText(string)
 
-        email_text = """\
-            From: %s
-            To: %s
-            Subject: %s
-            
-            %s
-            """ % (sent_from, ", ".join(to), subject, body)
+        msg['Subject'] = 'Your restraurant search results'
+        msg['From'] = 'restraurantbot@zomato.com'
+        msg['To'] = email_id
+
 
         try:
-            server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+            smtp_host = 'smtp.gmail.com'
+            smtp_port = 587
+            server = smtplib.SMTP()
+            server.connect(smtp_host,smtp_port)
             server.ehlo()
-            server.login(gmail_user, gmail_password)
-            server.sendmail(sent_from, to, email_text)
-            server.close()
+            server.starttls()
+            server.login('kurmakshetra@gmail.com','pho12kus')
+            server.sendmail('kurmakshetra@gmail.com', email_id, msg.as_string())
+            server.quit()
             print('Email sent!')
         except:
             print('Something went wrong...')
