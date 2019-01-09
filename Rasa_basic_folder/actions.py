@@ -124,7 +124,7 @@ class ActionSendEmail(Action):
         msg = MIMEText(email_message)
 
         msg['Subject'] = 'Your restraurant search results'
-        msg['From'] = 'restraurantbot@zomato.com'
+        msg['From'] = 'Restraurant Bot'
         msg['To'] = email_id
 
 
@@ -144,9 +144,4 @@ class ActionSendEmail(Action):
             traceback.print_exc()
 
         dispatcher.utter_message("Sent. Bon Appetit!")
-
-
-			
-		
-
 
