@@ -42,6 +42,7 @@ class ActionVerifyLocation(Action):
 		return 'verify_location'
 
 	def run(self, dispatcher, tracker, domain):
+		dispatcher.utter_message("verifying location")
 		cityname = tracker.get_slot("location")
 		if((cityname is not None) and (cityname.strip())):
 			correctedCity = list(self.our_possible_corrections(cityname.strip()))

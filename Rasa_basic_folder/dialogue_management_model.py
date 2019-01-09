@@ -12,15 +12,21 @@ from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.featurizers import (MaxHistoryTrackerFeaturizer, BinarySingleStateFeaturizer)
+# adding fallback policy
+from rasa_core.policies.fallback import FallbackPolicy
 
 logger = logging.getLogger(__name__)
 
 def train_dialogue(domain_file = 'restaurant_domain.yml',
 					model_path = './models/dialogue',
 					training_data_file = './data/stories.md'):
+
+	fallback = FallbackPolicy(fallback_action_name="action_default_fallback",
+	                          core_threshold=0.3,
+	                          nlu_threshold=0.5)
 					
 	featurizer = MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer(), max_history=5)
-	agent = Agent(domain_file, policies = [MemoizationPolicy(max_history = 5), KerasPolicy(featurizer)])
+	agent = Agent(domain_file, policies = [MemoizationPolicy(max_history = 5), KerasPolicy(featurizer),fallback])
 	
 	agent.train(
 				training_data_file,

@@ -11,6 +11,7 @@ from rasa_core.interpreter import RegexInterpreter
 from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.interpreter import RasaNLUInterpreter
+from rasa_core.policies.fallback import FallbackPolicy
 
 logger = logging.getLogger(__name__)
 
@@ -18,8 +19,13 @@ logger = logging.getLogger(__name__)
 def run_restaurant_online(input_channel, interpreter,
                           domain_file="restaurant_domain.yml",
                           training_data_file='data/stories.md'):
+
+    fallback = FallbackPolicy(fallback_action_name="action_default_fallback",
+                            core_threshold=0.3,
+                            nlu_threshold=0.5)
+    
     agent = Agent(domain_file,
-                  policies=[MemoizationPolicy(), KerasPolicy()],
+                  policies=[MemoizationPolicy(), KerasPolicy(),fallback],
                   interpreter=interpreter)
 
     agent.train_online(training_data_file,

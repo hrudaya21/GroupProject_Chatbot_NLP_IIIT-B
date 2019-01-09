@@ -35,7 +35,7 @@ templates:
     - "goodbye :("
     - "Bye-bye"
   utter_default:
-    - "default message"
+    - "I could not interpret what you said."
   utter_ask_cuisine: 
     - text: "what kind of cuisine would you like?"
       buttons:
