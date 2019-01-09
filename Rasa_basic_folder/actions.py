@@ -85,7 +85,7 @@ class ActionSearchRestaurants(Action):
 		lon=d1["location_suggestions"][0]["longitude"]
 		cuisines_dict={'Chinese':25,'Mexican':73 ,'Italian':55 ,'American':1 ,'Thai':95,'north indian':50,'south indian':85}
 		#if pricerangeCategory == -1:
-		results=zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), 5)
+		results=zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), 10)
 		d = json.loads(results)
 		response=""
 		if d['results_found'] == 0:
@@ -93,7 +93,7 @@ class ActionSearchRestaurants(Action):
 		else:
 			count = 0
 			for restaurant in d['restaurants']:
-				if(count == 5):
+				if(count == 10):
 					break
 				cost = restaurant.get('restaurant').get('average_cost_for_two')
 				if(pricerangeCategory == 0): # <=300
@@ -105,6 +105,7 @@ class ActionSearchRestaurants(Action):
 				elif(pricerangeCategory == 1): # 300-700
 					if(not ((cost > 300) & (cost < 700))):
 						continue
+                            # TODO: Maintain a map of restraurant meta, rating, finally sort.
 				response=response+ "Found "+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " Cost: " + str(cost) + "\n"
 				count = count + 1
 			SlotSet('restraurant_results_for_email_message', response)
