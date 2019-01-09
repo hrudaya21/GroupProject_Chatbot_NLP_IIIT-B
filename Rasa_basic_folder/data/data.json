@@ -23,7 +23,76 @@
         "value": "vegetarian",
         "synonyms": [
           "veggie",
-          "vegg"
+          "vegg",
+          "veg"
+        ]
+      },
+      {
+        "value": "Bangalore",
+        "synonyms": [
+          "Bengaluru"
+        ]
+      },
+      {
+        "value": "Kolkata",
+        "synonyms": [
+          "Calcutta"
+        ]
+      },
+      {
+        "value": "Pune",
+        "synonyms": [
+          "Poona"
+        ]
+      },
+      {
+        "value": "Chennai",
+        "synonyms": [
+          "Madras"
+        ]
+      },
+      {
+        "value": "Mumbai",
+        "synonyms": [
+          "Bombay"
+        ]
+      },
+      {
+        "value": "Belgaum",
+        "synonyms": [
+          "Belagavi"
+        ]
+      },
+      {
+        "value": "Kozhikode",
+        "synonyms": [
+          "Calicut"
+        ]
+      },
+      {
+        "value": "Thiruvananthapuram",
+        "synonyms": [
+          "Trivandrum"
+        ]
+      },
+      {
+        "value": "Pondicherry",
+        "synonyms": [
+          "Puducherry"
+        ]
+      },
+      {
+        "value": "Tiruchirappalli",
+        "synonyms": [
+          "Trichy",
+          "Tiruchi"
+        ]
+      },
+      {
+        "value": "Visakhapatnam",
+        "synonyms": [
+          "Vizag",
+          "Waltair"
         ]
       }
     ],
@@ -73,7 +142,8 @@
           "Gulbarga",
           "Guntur",
           "Gurgaon",
-          "Guwahati‚ Gwalior",
+          "Guwahati",
+          "Gwalior",
           "Hubli-Dharwad",
           "Indore",
           "Jabalpur",
