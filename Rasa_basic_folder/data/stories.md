@@ -1018,3 +1018,128 @@
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
     - export
+## Generated Story 3157057833187783964
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "chinese", "location": "bangalore", "pricerange": "700"}
+    - slot{"cuisine": "chinese"}
+    - slot{"location": "bangalore"}
+    - slot{"pricerange": "700"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "Found Byg Brewski Brewing Company in Behind MK Retail, Sarjapur Road, Bangalore Cost: 1600\nFound Byg Brewski Brewing Company in 22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore Cost: 1600\nFound Brew and Barbeque - A Microbrewery Pub in 36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore Cost: 1400\nFound The Black Pearl in 20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore Cost: 1500\nFound The Reservoire in 17th Main Road, JNC Road, Koramangala 5th Block, Bangalore Cost: 1300\nFound Bombay Adda in 6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore Cost: 1100\nFound Big Pitcher in LR Arcade,4121, Old Airport Road, Bangalore Cost: 1800\nFound Stories in Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore Cost: 1000\nFound XOOX Brewmill in 8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore Cost: 1500\nFound Truffles in 28, 4th 'B' Cross, Koramangala 5th Block, Bangalore Cost: 900\n"}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
+    - send_email
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "chinese", "location": "bangalore", "pricerange": "700", "email": "hrudaya21@gmail.com"}
+    - slot{"cuisine": "chinese"}
+    - slot{"email": "hrudaya21@gmail.com"}
+    - slot{"location": "bangalore"}
+    - slot{"pricerange": "700"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "Found Byg Brewski Brewing Company in Behind MK Retail, Sarjapur Road, Bangalore Cost: 1600\nFound Byg Brewski Brewing Company in 22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore Cost: 1600\nFound Brew and Barbeque - A Microbrewery Pub in 36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore Cost: 1400\nFound The Black Pearl in 20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore Cost: 1500\nFound The Reservoire in 17th Main Road, JNC Road, Koramangala 5th Block, Bangalore Cost: 1300\nFound Bombay Adda in 6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore Cost: 1100\nFound Big Pitcher in LR Arcade,4121, Old Airport Road, Bangalore Cost: 1800\nFound Stories in Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore Cost: 1000\nFound XOOX Brewmill in 8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore Cost: 1500\nFound Truffles in 28, 4th 'B' Cross, Koramangala 5th Block, Bangalore Cost: 900\n"}
+	- utter_ask_should_send_email
+* affirm
+    - send_email
+    - export
+## Generated Story 6690436840854442928
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "chinese", "location": "banagalore", "pricerange": "700"}
+    - slot{"cuisine": "chinese"}
+    - slot{"location": "banagalore"}
+    - slot{"pricerange": "700"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "Found Byg Brewski Brewing Company in Behind MK Retail, Sarjapur Road, Bangalore Cost: 1600\nFound Byg Brewski Brewing Company in 22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore Cost: 1600\nFound Brew and Barbeque - A Microbrewery Pub in 36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore Cost: 1400\nFound The Black Pearl in 20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore Cost: 1500\nFound The Reservoire in 17th Main Road, JNC Road, Koramangala 5th Block, Bangalore Cost: 1300\nFound Bombay Adda in 6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore Cost: 1100\nFound Big Pitcher in LR Arcade,4121, Old Airport Road, Bangalore Cost: 1800\nFound Stories in Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore Cost: 1000\nFound XOOX Brewmill in 8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore Cost: 1500\nFound Truffles in 28, 4th 'B' Cross, Koramangala 5th Block, Bangalore Cost: 900\n"}
+    - utter_ask_should_send_email
+* affirm
+    - send_email
+    - export
+## Generated Story 3325202526855132928
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "south indian"}
+    - slot{"cuisine": "south indian"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "300"}
+    - slot{"pricerange": "300"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "Found CTR in 7th Cross, Margosa Road, Malleshwaram, Bangalore Cost: 150\nFound Taaza Thindi in 1004, 26th Main, Next to HDFC Bank, 4th T Block, Jayanagar, Bangalore Cost: 100\nFound Vidyarthi Bhavan in 32, Gandhi Bazaar, Near Gandhi Bazaar Circle, Basavanagudi, Bangalore Cost: 150\nFound Mavalli Tiffin Room (MTR) in 14, Lalbagh Road, Mavalli, Basavanagudi, Bangalore Cost: 250\nFound Veena Stores in 187, 15th Cross, Margosa Road, Malleshwaram, Bangalore Cost: 150\nFound Mavalli Tiffin Room (MTR) in Namma Metro Pillar 62, 100 Feet Road, Indiranagar, Bangalore Cost: 300\nFound Brahmin's Coffee Bar in Ranga Rao Road, Near Shankar Mutt, Shankarapura, Near Basavanagudi, Bangalore Cost: 100\nFound Sree Krishna Kafe in 5th Main, Near Muni Reddy Kalyana Mantap, Koramangala 5th Block, Bangalore Cost: 200\n"}
+    - utter_ask_should_send_email
+* deny
+* goodbye
+    - utter_goodbye
+    - export
+## Generated Story 8467491363686640672
+* greet
+    - utter_greet
+* goodbye
+    - utter_goodbye
+* greet
+    - utter_greet
+* goodbye
+    - utter_goodbye
+* greet
+    - utter_greet
+* goodbye
+    - utter_goodbye
+* greet
+    - utter_greet
+* goodbye
+    - utter_goodbye
+* greet
+    - utter_greet
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* goodbye
+    - utter_goodbye
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* goodbye
+    - utter_goodbye
+* greet
+    - utter_greet
+* restaurant_search{"location": "bangalore", "pricerange": "700"}
+    - slot{"location": "bangalore"}
+    - slot{"pricerange": "700"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "Found Byg Brewski Brewing Company in Behind MK Retail, Sarjapur Road, Bangalore Cost: 1600\nFound Byg Brewski Brewing Company in 22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore Cost: 1600\nFound Brew and Barbeque - A Microbrewery Pub in 36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore Cost: 1400\nFound The Black Pearl in 20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore Cost: 1500\nFound The Reservoire in 17th Main Road, JNC Road, Koramangala 5th Block, Bangalore Cost: 1300\nFound Bombay Adda in 6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore Cost: 1100\nFound Big Pitcher in LR Arcade,4121, Old Airport Road, Bangalore Cost: 1800\nFound Stories in Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore Cost: 1000\nFound XOOX Brewmill in 8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore Cost: 1500\nFound Truffles in 28, 4th 'B' Cross, Koramangala 5th Block, Bangalore Cost: 900\n"}
+    - utter_ask_should_send_email
+* goodbye
+    - utter_goodbye
+    - export

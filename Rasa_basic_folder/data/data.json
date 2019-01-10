@@ -103,7 +103,15 @@
     "lookup_tables": [
       {
         "name": "cuisine",
-        "elements": ["Chinese", "Mexican", "Italian", "American", "Thai", "South Indian", "North Indian"]
+        "elements": [
+          "Chinese",
+          "Mexican",
+          "Italian",
+          "American",
+          "Thai",
+          "South Indian",
+          "North Indian"
+        ]
       },
       {
         "name": "location",
@@ -689,84 +697,84 @@
         ]
       },
       {
-        "text": "I will prefer Chinese",
+        "text": "Chinese",
         "intent": "restaurant_search",
         "entities": [
           {
-            "start": 14,
-            "end": 21,
+            "start": 0,
+            "end": 7,
             "value": "Chinese",
             "entity": "cuisine"
           }
         ]
       },
       {
-        "text": "I will prefer Mexican",
+        "text": "Mexican",
         "intent": "restaurant_search",
         "entities": [
           {
-            "start": 14,
-            "end": 21,
+            "start": 0,
+            "end": 7,
             "value": "Mexican",
             "entity": "cuisine"
           }
         ]
       },
       {
-        "text": "I will prefer Italian",
+        "text": "Italian",
         "intent": "restaurant_search",
         "entities": [
           {
-            "start": 14,
-            "end": 21,
+            "start": 0,
+            "end": 7,
             "value": "Italian",
             "entity": "cuisine"
           }
         ]
       },
       {
-        "text": "I will prefer American",
+        "text": "American",
         "intent": "restaurant_search",
         "entities": [
           {
-            "start": 14,
-            "end": 22,
+            "start": 0,
+            "end": 8,
             "value": "American",
             "entity": "cuisine"
           }
         ]
       },
       {
-        "text": "I will prefer Thai",
+        "text": "Thai",
         "intent": "restaurant_search",
         "entities": [
           {
-            "start": 14,
-            "end": 18,
+            "start": 0,
+            "end": 4,
             "value": "Thai",
             "entity": "cuisine"
           }
         ]
       },
       {
-        "text": "I will prefer South Indian",
+        "text": "South Indian",
         "intent": "restaurant_search",
         "entities": [
           {
-            "start": 14,
-            "end": 26,
+            "start": 0,
+            "end": 12,
             "value": "South Indian",
             "entity": "cuisine"
           }
         ]
       },
       {
-        "text": "I will prefer North Indian",
+        "text": "North Indian",
         "intent": "restaurant_search",
         "entities": [
           {
-            "start": 14,
-            "end": 26,
+            "start": 0,
+            "end": 12,
             "value": "North Indian",
             "entity": "cuisine"
           }
@@ -1041,6 +1049,102 @@
             "end": 4,
             "value": "Agra",
             "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "thai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "thai",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "looking for chinese restaurant",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "looking for mexican restaurant",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "looking for italian restaurant",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "italian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "looking for south indian restaurant",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "looking for north indian restaurant",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "north indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "looking for good thai restaurant in bangalore with budget more than 700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "thai",
+            "entity": "cuisine"
+          },
+          {
+            "start": 36,
+            "end": 45,
+            "value": "bangalore",
+            "entity": "location"
+          },
+          {
+            "start": 68,
+            "end": 71,
+            "value": "700",
+            "entity": "pricerange"
           }
         ]
       }
