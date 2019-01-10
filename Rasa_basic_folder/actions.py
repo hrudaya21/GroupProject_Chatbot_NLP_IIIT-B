@@ -110,8 +110,18 @@ class ActionSearchRestaurants(Action):
 					if(not ((cost > 300) & (cost < 700))):
 						continue
                             # TODO: Maintain a map of restraurant meta, rating, finally sort.
-				response=response+ "Found "+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " Cost: " + str(cost) + " Rating: " + restaurant['restaurant']['user_rating']['aggregate_rating'] + "\n"
+				current_restraurant =  "Found "+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " Cost: " + str(cost) + " Rating: " + restaurant['restaurant']['user_rating']['aggregate_rating'] + "\n"
+				current_rating = restaurant['restaurant']['user_rating']['aggregate_rating']
+                
+				ratings_map[current_restraurant] = current_rating
 				count = count + 1
+            
+            # Sort the restraurants by rating.
+			sorted_restraurants = sorted(ratings_map)
+                        
+			for restraurant in sorted_restraurants:
+				response = response + restraurant
+
 			SlotSet('restraurant_results_for_email_message', response)
 		
 		dispatcher.utter_message("-----"+response)
