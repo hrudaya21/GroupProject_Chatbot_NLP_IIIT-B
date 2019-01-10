@@ -90,7 +90,7 @@ class ActionSearchRestaurants(Action):
 		d = json.loads(results)
         
         #Map to maintain the restraurant rating and the restraurant result. Will use this map to order by rating
-        ratings_map = {}
+		ratings_map = {}
 		response=""
 		if d['results_found'] == 0:
 			response= "no results"
