@@ -117,12 +117,10 @@ class ActionSearchRestaurants(Action):
 				count = count + 1
             
             # Sort the restraurants by rating.
-			sorted_restraurants = sorted(ratings_map)
-                        
-			for restraurant in sorted_restraurants:
-				response = response + restraurant
+			sorted_restraurants = sorted(ratings_map.items(), key = lambda kv:(kv[1], kv[0]), reverse = True)
 
-			SlotSet('restraurant_results_for_email_message', response)
+			for restraurant in sorted_restraurants:
+				response = response + restraurant[0]
 		
 		dispatcher.utter_message("-----"+response)
 		return [SlotSet('restraurant_results_for_email_message',response)]
