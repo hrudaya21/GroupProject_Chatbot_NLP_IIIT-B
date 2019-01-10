@@ -79,14 +79,18 @@ class ActionSearchRestaurants(Action):
 			pricerangeCategory = 2
 		else:
 			pricerangeCategory = -1
-		location_detail=zomato.get_location(loc, 1)
+		location_detail = zomato.get_location(loc, 1)
 		d1 = json.loads(location_detail)
-		lat=d1["location_suggestions"][0]["latitude"]
-		lon=d1["location_suggestions"][0]["longitude"]
-		cuisines_dict={'Chinese':25,'Mexican':73 ,'Italian':55 ,'American':1 ,'Thai':95,'north indian':50,'south indian':85}
+		lat = d1["location_suggestions"][0]["latitude"]
+		lon = d1["location_suggestions"][0]["longitude"]
+		cuisines_dict = {'Chinese':25,'Mexican':73 ,'Italian':55 ,'American':1 ,'Thai':95,'north indian':50,'south indian':85}
 		#if pricerangeCategory == -1:
-		results=zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), 10)
+        # Fetch the 10 restraurant results by calling the Zomato API
+		results = zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), 10)
 		d = json.loads(results)
+        
+        #Map to maintain the restraurant rating and the restraurant result. Will use this map to order by rating
+        ratings_map = {}
 		response=""
 		if d['results_found'] == 0:
 			response= "no results"
@@ -106,7 +110,7 @@ class ActionSearchRestaurants(Action):
 					if(not ((cost > 300) & (cost < 700))):
 						continue
                             # TODO: Maintain a map of restraurant meta, rating, finally sort.
-				response=response+ "Found "+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " Cost: " + str(cost) + "\n"
+				response=response+ "Found "+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " Cost: " + str(cost) + " Rating: " + restaurant['restaurant']['user_rating']['aggregate_rating'] + "\n"
 				count = count + 1
 			SlotSet('restraurant_results_for_email_message', response)
 		
