@@ -1,121 +1,24 @@
-## Generated Story 255706069223404498
+## Generated Story -7299120857403942656
 * greet
     - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "delhi"}
-    - slot{"location": "delhi"}
-	- verify_location
+* restaurant_search{"location": "pune"}
+    - slot{"location": "pune"}
+    - verify_location
     - utter_ask_cuisine
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
     - action_restaurant
-    - slot{"location": "delhi"}
-    - utter_goodbye
-    - export
-
-## Generated Story 1993277579540566202
-* greet
-    - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "delhi"}
-    - slot{"location": "delhi"}
-	- verify_location
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "North Indian"}
-    - slot{"cuisine": "North Indian"}
-    - action_restaurant
-    - utter_goodbye
-
-## Generated Story -4639179087166749998
-* greet
-    - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "delhi"}
-    - slot{"location": "delhi"}
-	- verify_location
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - action_restaurant
-    - slot{"location": "delhi"}
-    - export
-
-
-## Generated Story 4963448062290237512
-* greet
-    - utter_greet
-* restaurant_search{"location": "delhi"}
-    - slot{"location": "delhi"}
-	- verify_location
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - action_restaurant
+    - utter_ask_should_send_email
 * affirm
-    - utter_goodbye
-    - export
+    - utter_ask_email_id
+* restaurant_search{"email": "hrishikesh.r.desai@gmail.com"}
+    - slot{"email": "hrishikesh.r.desai@gmail.com"}
+    - send_email
 
-## Generated Story -2639717325624473810
-* greet
-    - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "bangalore"}
-    - slot{"location": "bangalore"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - utter_ask_budget
-* restaurant_search{"pricerange": "300 to 700"}
-    - slot{"pricerange": "300 to 700"}
-    - export
-## Generated Story 6355795001964485975
-* greet
-    - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "bangalore"}
-    - slot{"location": "bangalore"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - utter_ask_budget
-* restaurant_search{"pricerange": "700"}
-    - slot{"pricerange": "700"}
-    - export
-## Generated Story 5216608032655389217
-* greet
-    - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "delhi"}
-    - slot{"location": "delhi"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - utter_ask_budget
-* restaurant_search{"pricerange": "700"}
-    - slot{"pricerange": "700"}
-    - action_restaurant
-    - export	
-## Generated Story 4608350022065743812
-* greet
-    - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "bangalore"}
-    - slot{"location": "bangalore"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - utter_ask_budget
-* restaurant_search{"pricerange": "300"}
-    - slot{"pricerange": "300"}
-    - action_restaurant
-    - export	
+
 ## Generated Story 7571176434215927340
 * greet
     - utter_greet
@@ -133,6 +36,7 @@
     - slot{"location": "bangalore"}
     - utter_ask_should_send_email
 * deny
+
     - export	
 ## Generated Story 5793991498973845777
 * greet
@@ -152,9 +56,12 @@
     - utter_ask_should_send_email
 * affirm
     - utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}	
 * send_email
     - send_email
     - export	
+
 ## Generated Story -4119916223930012371
 * greet{"location": "hola"}
     - slot{"location": "hola"}
@@ -201,6 +108,7 @@
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
     - export
+
 ## Generated Story -6574399902414284621
 * greet
     - utter_greet
@@ -1048,6 +956,9 @@
     - slot{"restraurant_results_for_email_message": "Found Byg Brewski Brewing Company in Behind MK Retail, Sarjapur Road, Bangalore Cost: 1600\nFound Byg Brewski Brewing Company in 22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore Cost: 1600\nFound Brew and Barbeque - A Microbrewery Pub in 36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore Cost: 1400\nFound The Black Pearl in 20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore Cost: 1500\nFound The Reservoire in 17th Main Road, JNC Road, Koramangala 5th Block, Bangalore Cost: 1300\nFound Bombay Adda in 6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore Cost: 1100\nFound Big Pitcher in LR Arcade,4121, Old Airport Road, Bangalore Cost: 1800\nFound Stories in Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore Cost: 1000\nFound XOOX Brewmill in 8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore Cost: 1500\nFound Truffles in 28, 4th 'B' Cross, Koramangala 5th Block, Bangalore Cost: 900\n"}
 	- utter_ask_should_send_email
 * affirm
+	- utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
     - send_email
     - export
 ## Generated Story 6690436840854442928
@@ -1063,6 +974,9 @@
     - slot{"restraurant_results_for_email_message": "Found Byg Brewski Brewing Company in Behind MK Retail, Sarjapur Road, Bangalore Cost: 1600\nFound Byg Brewski Brewing Company in 22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore Cost: 1600\nFound Brew and Barbeque - A Microbrewery Pub in 36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore Cost: 1400\nFound The Black Pearl in 20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore Cost: 1500\nFound The Reservoire in 17th Main Road, JNC Road, Koramangala 5th Block, Bangalore Cost: 1300\nFound Bombay Adda in 6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore Cost: 1100\nFound Big Pitcher in LR Arcade,4121, Old Airport Road, Bangalore Cost: 1800\nFound Stories in Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore Cost: 1000\nFound XOOX Brewmill in 8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore Cost: 1500\nFound Truffles in 28, 4th 'B' Cross, Koramangala 5th Block, Bangalore Cost: 900\n"}
     - utter_ask_should_send_email
 * affirm
+	- utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}	
     - send_email
     - export
 ## Generated Story 3325202526855132928
@@ -1140,6 +1054,65 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found Byg Brewski Brewing Company in Behind MK Retail, Sarjapur Road, Bangalore Cost: 1600\nFound Byg Brewski Brewing Company in 22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore Cost: 1600\nFound Brew and Barbeque - A Microbrewery Pub in 36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore Cost: 1400\nFound The Black Pearl in 20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore Cost: 1500\nFound The Reservoire in 17th Main Road, JNC Road, Koramangala 5th Block, Bangalore Cost: 1300\nFound Bombay Adda in 6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore Cost: 1100\nFound Big Pitcher in LR Arcade,4121, Old Airport Road, Bangalore Cost: 1800\nFound Stories in Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore Cost: 1000\nFound XOOX Brewmill in 8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore Cost: 1500\nFound Truffles in 28, 4th 'B' Cross, Koramangala 5th Block, Bangalore Cost: 900\n"}
     - utter_ask_should_send_email
+* goodbye
+    - utter_goodbye
+    - export
+## Generated Story -4455684189492410837
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "london"}
+    - slot{"location": "london"}
+    - verify_location
+    - slot{"location": null}
+* restaurant_search{"location": "baklsdkan"}
+    - slot{"location": "baklsdkan"}
+    - verify_location
+    - slot{"location": null}
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "<table border='1'>\n<tr>\n<td> <b> Restraurant Name </b> </td>\n<td> <b> Restraurant Location </b> </td>\n<td> <b> Price - Meal for Two </b> </td>\n<td> <b> Rating </b> </td>\n</tr><tr><td>Byg Brewski Brewing Company</td><td>Behind MK Retail, Sarjapur Road, Bangalore</td><td>1600</td><td>4.9</td></tr><tr><td>The Black Pearl</td><td>20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore</td><td>1500</td><td>4.7</td></tr><tr><td>Brew and Barbeque - A Microbrewery Pub</td><td>36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore</td><td>1400</td><td>4.7</td></tr><tr><td>Big Pitcher</td><td>LR Arcade,4121, Old Airport Road, Bangalore</td><td>1800</td><td>4.7</td></tr><tr><td>Byg Brewski Brewing Company</td><td>22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore</td><td>1600</td><td>4.6</td></tr><tr><td>XOOX Brewmill</td><td>8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore</td><td>1500</td><td>4.5</td></tr><tr><td>The Reservoire</td><td>17th Main Road, JNC Road, Koramangala 5th Block, Bangalore</td><td>1300</td><td>4.5</td></tr><tr><td>Stories</td><td>Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore</td><td>1000</td><td>4.3</td></tr><tr><td>Bombay Adda</td><td>6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore</td><td>1100</td><td>4.3</td></tr></table>"}
+    - utter_ask_should_send_email
+* deny
+* goodbye
+    - utter_goodbye
+    - export
+
+## Generated Story 7020414661036337744
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "london"}
+    - slot{"location": "london"}
+    - verify_location
+    - slot{"location": null}
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "<table border='1'>\n<tr>\n<td> <b> Restraurant Name </b> </td>\n<td> <b> Restraurant Location </b> </td>\n<td> <b> Price - Meal for Two </b> </td>\n<td> <b> Rating </b> </td>\n</tr><tr><td>Byg Brewski Brewing Company</td><td>Behind MK Retail, Sarjapur Road, Bangalore</td><td>1600</td><td>4.9</td></tr><tr><td>The Black Pearl</td><td>20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore</td><td>1500</td><td>4.7</td></tr><tr><td>Brew and Barbeque - A Microbrewery Pub</td><td>36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore</td><td>1400</td><td>4.7</td></tr><tr><td>Big Pitcher</td><td>LR Arcade,4121, Old Airport Road, Bangalore</td><td>1800</td><td>4.7</td></tr><tr><td>Byg Brewski Brewing Company</td><td>22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore</td><td>1600</td><td>4.6</td></tr><tr><td>XOOX Brewmill</td><td>8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore</td><td>1500</td><td>4.5</td></tr><tr><td>The Reservoire</td><td>17th Main Road, JNC Road, Koramangala 5th Block, Bangalore</td><td>1300</td><td>4.5</td></tr><tr><td>Stories</td><td>Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore</td><td>1000</td><td>4.3</td></tr><tr><td>Bombay Adda</td><td>6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore</td><td>1100</td><td>4.3</td></tr></table>"}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* restaurant_search{"email": "amirisetty.vijayaraghavan@gmail.com"}
+    - slot{"email": "amirisetty.vijayaraghavan@gmail.com"}
+    - send_email
 * goodbye
     - utter_goodbye
     - export
