@@ -118,7 +118,7 @@ class ActionSearchRestaurants(Action):
             
 				current_restraurant_html =  "<tr><td>" + restaurant['restaurant']['name']+ "</td><td>"+ restaurant['restaurant']['location']['address']+ "</td><td>" + str(cost) + "</td><td>" + restaurant['restaurant']['user_rating']['aggregate_rating'] + "</td></tr>"
                 
-				ratings_map_html[current_restraurant] = current_rating
+				ratings_map_html[current_restraurant_html] = current_rating
 
 				count = count + 1
             
