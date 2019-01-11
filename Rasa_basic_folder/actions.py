@@ -162,7 +162,11 @@ class ActionSendEmail(Action):
 
         msg = MIMEText(email_message, 'html')
 
-        msg['Subject'] = 'Your restraurant search results'
+        loc = tracker.get_slot('location')
+        cuisine = tracker.get_slot('cuisine')
+        budget = tracker.get_slot('pricerange')
+
+        msg['Subject'] = 'Your restraurants for ' + cuisine + ' in ' + loc + ' with budget ' + budget
         msg['From'] = 'Restraurant Bot'
         msg['To'] = email_id
         if not email_id:
