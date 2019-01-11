@@ -6,14 +6,16 @@ from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 import zomatopy
 import json
-# Import smtplib for the actual sending function
+# Import smtplib for the email sending function
 import smtplib
 import email
 from email.mime.text import MIMEText
 
 import traceback
 
-
+# Action class to verify the location to see if the user entered location is a supported city.
+# We also check for spelling mistakes by the customer by considering edits at a distance of one and two from
+# the correct name of the city.
 class ActionVerifyLocation(Action):
 	def edits_one(self,word):
 	    "Create all edits that are one edit away from `word`."
@@ -60,7 +62,10 @@ class ActionVerifyLocation(Action):
 			dispatcher.utter_message(correctedCity[0])
 			return [SlotSet("location", correctedCity[0])]
 	
-
+# Action to search the restraurants by calling the Zomato API.
+# Here we also sort the restraurants by the rating in the descending order.
+# We also populate the slot for html email which will be sent in case the customer wants to have the results in
+# email
 class ActionSearchRestaurants(Action):
 	def name(self):
 		return 'action_restaurant'
@@ -85,7 +90,6 @@ class ActionSearchRestaurants(Action):
 		lat = d1["location_suggestions"][0]["latitude"]
 		lon = d1["location_suggestions"][0]["longitude"]
 		cuisines_dict = {'Chinese':25,'Mexican':73 ,'Italian':55 ,'American':1 ,'Thai':95,'north indian':50,'south indian':85}
-		#if pricerangeCategory == -1:
         # Fetch the 10 restraurant results by calling the Zomato API
 		results = zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), 10)
 		d = json.loads(results)
@@ -151,6 +155,8 @@ class ActionSearchRestaurants(Action):
 
 		return [SlotSet('restraurant_results_for_email_message',response_html)]
 
+# Action to send email to the customer. The email subject is dynamic based on the choices selected by the
+# customer. Uses gmail smtp server to send the email.
 class ActionSendEmail(Action):
     def name(self):
         return 'send_email'
@@ -158,7 +164,7 @@ class ActionSendEmail(Action):
     def run(self, dispatcher, tracker, domain):
         email_message = tracker.get_slot("restraurant_results_for_email_message")
         email_id = tracker.get_slot("email")
-# Code to send email
+        # Code to send email
 
         msg = MIMEText(email_message, 'html')
 
@@ -169,6 +175,8 @@ class ActionSendEmail(Action):
         msg['Subject'] = 'Your restraurants for ' + cuisine + ' in ' + loc + ' with budget ' + budget
         msg['From'] = 'Restraurant Bot'
         msg['To'] = email_id
+        
+        # Handling an error condition when the email id is populated in the slot
         if not email_id:
             dispatcher.utter_message("Did not send email as email id is not entered")
             return
