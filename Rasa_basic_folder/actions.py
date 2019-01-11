@@ -164,7 +164,9 @@ class ActionSendEmail(Action):
         msg['Subject'] = 'Your restraurant search results'
         msg['From'] = 'Restraurant Bot'
         msg['To'] = email_id
-
+        if not email_id:
+            dispatcher.utter_message("Did not send email as email id is not entered")
+            return
 
         try:
             smtp_host = 'smtp.gmail.com'
