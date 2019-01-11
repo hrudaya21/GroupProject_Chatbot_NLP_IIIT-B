@@ -78,7 +78,8 @@ class ActionSearchRestaurants(Action):
 		elif( (budget.find("700") >= 0) ):
 			pricerangeCategory = 2
 		else:
-			pricerangeCategory = -1
+			dispatcher.utter_message("Could not understand the price range. Giving restraurants between 300 and 700 Rs")
+			pricerangeCategory = 1
 		location_detail = zomato.get_location(loc, 1)
 		d1 = json.loads(location_detail)
 		lat = d1["location_suggestions"][0]["latitude"]
