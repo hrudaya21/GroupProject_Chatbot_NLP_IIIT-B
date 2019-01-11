@@ -114,16 +114,40 @@ class ActionSearchRestaurants(Action):
 				current_rating = restaurant['restaurant']['user_rating']['aggregate_rating']
                 
 				ratings_map[current_restraurant] = current_rating
+            
+				current_restraurant_html =  "<tr><td>" + restaurant['restaurant']['name']+ "</td><td>"+ restaurant['restaurant']['location']['address']+ "</td><td>" + str(cost) + "</td><td>" + restaurant['restaurant']['user_rating']['aggregate_rating'] + "</td></tr>"
+                
+				ratings_map_html[current_restraurant] = current_rating
+
 				count = count + 1
             
             # Sort the restraurants by rating.
-			sorted_restraurants = sorted(ratings_map.items(), key = lambda kv:(kv[1], kv[0]), reverse = True)
+		sorted_restraurants = sorted(ratings_map.items(), key = lambda kv:(kv[1], kv[0]), reverse = True)
 
-			for restraurant in sorted_restraurants:
-				response = response + restraurant[0]
-		
+            # Sort the html email by the rating.
+		sorted_restraurants_html = sorted(ratings_map_html.items(), key = lambda kv:(kv[1], kv[0]), reverse = True)
+
+		for restraurant in sorted_restraurants:
+			response = response + restraurant[0]
+
+        # Utter the response
 		dispatcher.utter_message("-----"+response)
-		return [SlotSet('restraurant_results_for_email_message',response)]
+            
+# Initialize the response_html for the email with the html table header
+		response_html = """<table border='1'>
+<tr>
+<td> <b> Restraurant Name </b> </td>
+<td> <b> Restraurant Location </b> </td>
+<td> <b> Price - Meal for Two </b> </td>
+<td> <b> Rating </b> </td>
+</tr>"""
+            # Populate the html table content for the email
+		for restraurant in sorted_restraurants_html:
+			response_html = response_html + restraurant[0]
+            
+		response_html = response_html + "</table>"
+
+		return [SlotSet('restraurant_results_for_email_message',response_html)]
 
 class ActionSendEmail(Action):
     def name(self):
@@ -134,7 +158,7 @@ class ActionSendEmail(Action):
         email_id = tracker.get_slot("email")
 # Code to send email
 
-        msg = MIMEText(email_message)
+        msg = MIMEText(email_message, 'html')
 
         msg['Subject'] = 'Your restraurant search results'
         msg['From'] = 'Restraurant Bot'
