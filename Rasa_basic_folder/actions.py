@@ -91,6 +91,7 @@ class ActionSearchRestaurants(Action):
         
         #Map to maintain the restraurant rating and the restraurant result. Will use this map to order by rating
 		ratings_map = {}
+		ratings_map_html = {}
 		response=""
 		if d['results_found'] == 0:
 			response= "no results"
