@@ -100,6 +100,8 @@ class ActionSearchRestaurants(Action):
 		response=""
 		if d['results_found'] == 0:
 			response= "no results"
+			dispatcher.utter_message("No restraurants found for your search")
+			return [SlotSet('restraurant_results_for_email_message',"No results found")]
 		else:
 			count = 0
 			for restaurant in d['restaurants']:
@@ -165,7 +167,7 @@ class ActionSendEmail(Action):
         email_message = tracker.get_slot("restraurant_results_for_email_message")
         email_id = tracker.get_slot("email")
         # Code to send email
-
+        dispatcher.utter_message("Sending email ...")
         msg = MIMEText(email_message, 'html')
 
         loc = tracker.get_slot('location')
