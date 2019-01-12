@@ -154,8 +154,11 @@ class ActionSearchRestaurants(Action):
 			response_html = response_html + restraurant[0]
             
 		response_html = response_html + "</table>"
+        
+		email_subject = 'Your restraurants for ' + cuisine + ' in ' + loc + ' with budget ' + budget
 
-		return [SlotSet('restraurant_results_for_email_message',response_html)]
+		return [SlotSet('restraurant_results_for_email_message',response_html), SlotSet('location', None),
+                SlotSet('cuisine', None), SlotSet('pricerange', None), SlotSet('email_subject', email_subject)]
 
 # Action to send email to the customer. The email subject is dynamic based on the choices selected by the
 # customer. Uses gmail smtp server to send the email.
@@ -174,7 +177,7 @@ class ActionSendEmail(Action):
         cuisine = tracker.get_slot('cuisine')
         budget = tracker.get_slot('pricerange')
 
-        msg['Subject'] = 'Your restraurants for ' + cuisine + ' in ' + loc + ' with budget ' + budget
+        msg['Subject'] = tracker.get_slot('email_subject')
         msg['From'] = 'Restraurant Bot'
         msg['To'] = email_id
         
@@ -199,4 +202,5 @@ class ActionSendEmail(Action):
             traceback.print_exc()
 
         dispatcher.utter_message("Sent. Bon Appetit!")
+        return [SlotSet('restraurant_results_for_email_message',None), SlotSet('email_subject', None)]
 
