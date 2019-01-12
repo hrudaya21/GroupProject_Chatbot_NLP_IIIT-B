@@ -78,11 +78,11 @@
     - action_restaurant
     - slot{"location": "bangalore"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 
 
@@ -127,11 +127,11 @@
     - action_restaurant
     - slot{"location": "bangalore"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 	
 ## Generated Story 8455316801529394086
@@ -152,11 +152,11 @@
     - action_restaurant
     - slot{"location": "hyderabad"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 ## Generated Story 8614594228142126930
 * greet
@@ -194,11 +194,11 @@
     - action_restaurant
     - slot{"location": "bangalore"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 
 ## Generated Story 4508088622285753629
@@ -214,11 +214,11 @@
     - action_restaurant
     - slot{"location": "belgaum"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 
 ## Generated Story -3143433703116657356
@@ -236,11 +236,11 @@
     - action_restaurant
     - slot{"location": "mumbai"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 ## Generated Story -5669288759055082475
 * greet
@@ -258,11 +258,11 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found Asia Kitchen By Mainland China in 136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore Cost: 1500\nFound High Ultra Lounge in 26/1 , 31st Floor, Dr. Rajkumar Road, World Trade Centre, Brigade Gateway Campus, Malleshwaram, Bangalore Cost: 2600\nFound Yo! Chow in 90/3 Sri Sapthagiri Complex,Outer ring road marathahalli,Opp to innovative Multiplex, Marathahalli, Bangalore Cost: 800\nFound Yauatcha in 1 MG Mall, MG Road, Bangalore Cost: 2800\nFound Mainland China in 28/2, 1st Floor, Siddapura, Whitefield Main Road, Whitefield, Bangalore near Dmart Cost: 1700\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 
 ## Generated Story 8414988504950852106
@@ -283,11 +283,11 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found Asia Kitchen By Mainland China in 136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore Cost: 1500\nFound High Ultra Lounge in 26/1 , 31st Floor, Dr. Rajkumar Road, World Trade Centre, Brigade Gateway Campus, Malleshwaram, Bangalore Cost: 2600\nFound Yo! Chow in 90/3 Sri Sapthagiri Complex,Outer ring road marathahalli,Opp to innovative Multiplex, Marathahalli, Bangalore Cost: 800\nFound Yauatcha in 1 MG Mall, MG Road, Bangalore Cost: 2800\nFound Mainland China in 28/2, 1st Floor, Siddapura, Whitefield Main Road, Whitefield, Bangalore near Dmart Cost: 1700\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
-* restaurant_search{"email": "amirisetty.vijayaraghavan@gmail.com"}
-    - slot{"email": "amirisetty.vijayaraghavan@gmail.com"}
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 ## Generated Story 4887725827197572356
 * greet
@@ -307,11 +307,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": ""}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 * greet
     - utter_greet
 * restaurant_search
@@ -329,11 +330,11 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found RP's Pizzeria in Shop 5, Ground Floor, Axiom 2, SP Ring Road, Bopal, Ahmedabad Cost: 500\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 ## Generated Story -4361798139229803469
 * greet
@@ -377,11 +378,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": ""}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 ## Generated Story -636448589031215344
 * greet
     - utter_greet
@@ -400,11 +402,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found RP's Pizzeria in Shop 5, Ground Floor, Axiom 2, SP Ring Road, Bopal, Ahmedabad Cost: 500\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 ## Generated Story -2716849534532737595
 * greet
     - utter_greet
@@ -469,11 +472,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found The Esplendido Cafe in Ground Floor & First Floor, Opposite Samartheshwar Mahadev, Near V-Mart, Law Garden Cross Road, Navrangpura, Ahmedabad Cost: 800\nFound Makeba - The Lounge Cafe in 8th Floor, 3rd Eye Vision, Opposite Shivalik Plaza, Panjrapol Circle, IIM Road, Vastrapur, Ahmedabad Cost: 1000\nFound Huber & Holly in 7 B, Pakwan Cross Road, Boadakdev, Ahmedabad Cost: 800\nFound Bogarosa in 299/1, Behind Rajpath Club, Beside 9th Avenue Building, Bodakdev, Ahmedabad Cost: 800\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "nice"}
@@ -514,11 +518,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found RP's Pizzeria in Shop 5, Ground Floor, Axiom 2, SP Ring Road, Bopal, Ahmedabad Cost: 500\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "nice"}
@@ -537,11 +542,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found The Esplendido Cafe in Ground Floor & First Floor, Opposite Samartheshwar Mahadev, Near V-Mart, Law Garden Cross Road, Navrangpura, Ahmedabad Cost: 800\nFound Makeba - The Lounge Cafe in 8th Floor, 3rd Eye Vision, Opposite Shivalik Plaza, Panjrapol Circle, IIM Road, Vastrapur, Ahmedabad Cost: 1000\nFound Huber & Holly in 7 B, Pakwan Cross Road, Boadakdev, Ahmedabad Cost: 800\nFound Bogarosa in 299/1, Behind Rajpath Club, Beside 9th Avenue Building, Bodakdev, Ahmedabad Cost: 800\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 * greet
     - utter_greet
 * restaurant_search
@@ -604,11 +610,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found RP's Pizzeria in Shop 5, Ground Floor, Axiom 2, SP Ring Road, Bopal, Ahmedabad Cost: 500\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "nice"}
@@ -627,11 +634,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found The Esplendido Cafe in Ground Floor & First Floor, Opposite Samartheshwar Mahadev, Near V-Mart, Law Garden Cross Road, Navrangpura, Ahmedabad Cost: 800\nFound Makeba - The Lounge Cafe in 8th Floor, 3rd Eye Vision, Opposite Shivalik Plaza, Panjrapol Circle, IIM Road, Vastrapur, Ahmedabad Cost: 1000\nFound Huber & Holly in 7 B, Pakwan Cross Road, Boadakdev, Ahmedabad Cost: 800\nFound Bogarosa in 299/1, Behind Rajpath Club, Beside 9th Avenue Building, Bodakdev, Ahmedabad Cost: 800\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "nice"}
@@ -650,11 +658,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": ""}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 * greet
     - utter_greet
 * restaurant_search
@@ -716,11 +725,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": ""}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 * greet
     - utter_greet
 * restaurant_search
@@ -773,11 +783,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found Kovallam in Opposite Sardar Patel Sewa Samaj Hall, C G Road, Ahmedabad Cost: 500\nFound Dakshinayan in 4-7, Sarthik Complex, Near Gulmohar Park Mall, Satellite, Ahmedabad Cost: 600\nFound Radhika's Authentic South Indian Food in 4, 15 - Sunrise Shopping Centre, Near ASIA School, Drive In Road, Gurukul, Ahmedabad Cost: 600\nFound Sankalp in Samir Building, Opposite Municipal Market, C G Road, Ahmedabad Cost: 650\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 * greet
     - utter_greet
 * restaurant_search
@@ -818,11 +829,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": ""}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 * greet
     - utter_greet
 * restaurant_search
@@ -862,11 +874,11 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found Jassi De Parathe in 28, Sardar Centre, Vastrapur, Ahmedabad Cost: 700\nFound Barbeque Nation in 1st Floor, Satyaone, Opposite Manav Mandir, Memnagar, Ahmedabad Cost: 1500\nFound The Secret Kitchen in 2nd Floor, Times Square II,\nBeside Avalon Hotel, Sindhu Bhavan Road, Bodakdev, Ahmedabad Cost: 1100\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 ## Generated Story -6992475329185366927
 * greet
@@ -902,11 +914,11 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found The Esplendido Cafe in Ground Floor & First Floor, Opposite Samartheshwar Mahadev, Near V-Mart, Law Garden Cross Road, Navrangpura, Ahmedabad Cost: 800\nFound Makeba - The Lounge Cafe in 8th Floor, 3rd Eye Vision, Opposite Shivalik Plaza, Panjrapol Circle, IIM Road, Vastrapur, Ahmedabad Cost: 1000\nFound Huber & Holly in 7 B, Pakwan Cross Road, Boadakdev, Ahmedabad Cost: 800\nFound Bogarosa in 299/1, Behind Rajpath Club, Beside 9th Avenue Building, Bodakdev, Ahmedabad Cost: 800\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 ## Generated Story -1289030032490395016
 * greet
@@ -938,11 +950,12 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found Byg Brewski Brewing Company in Behind MK Retail, Sarjapur Road, Bangalore Cost: 1600\nFound Byg Brewski Brewing Company in 22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore Cost: 1600\nFound Brew and Barbeque - A Microbrewery Pub in 36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore Cost: 1400\nFound The Black Pearl in 20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore Cost: 1500\nFound The Reservoire in 17th Main Road, JNC Road, Koramangala 5th Block, Bangalore Cost: 1300\nFound Bombay Adda in 6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore Cost: 1100\nFound Big Pitcher in LR Arcade,4121, Old Airport Road, Bangalore Cost: 1800\nFound Stories in Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore Cost: 1000\nFound XOOX Brewmill in 8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore Cost: 1500\nFound Truffles in 28, 4th 'B' Cross, Koramangala 5th Block, Bangalore Cost: 900\n"}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
+    - export
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "chinese", "location": "bangalore", "pricerange": "700", "email": "hrudaya21@gmail.com"}
@@ -973,11 +986,11 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": "Found Byg Brewski Brewing Company in Behind MK Retail, Sarjapur Road, Bangalore Cost: 1600\nFound Byg Brewski Brewing Company in 22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore Cost: 1600\nFound Brew and Barbeque - A Microbrewery Pub in 36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore Cost: 1400\nFound The Black Pearl in 20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore Cost: 1500\nFound The Reservoire in 17th Main Road, JNC Road, Koramangala 5th Block, Bangalore Cost: 1300\nFound Bombay Adda in 6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore Cost: 1100\nFound Big Pitcher in LR Arcade,4121, Old Airport Road, Bangalore Cost: 1800\nFound Stories in Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore Cost: 1000\nFound XOOX Brewmill in 8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore Cost: 1500\nFound Truffles in 28, 4th 'B' Cross, Koramangala 5th Block, Bangalore Cost: 900\n"}
     - utter_ask_should_send_email
-* affirm
-	- utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
-    - slot{"email": "hrudaya21@gmail.com"}	
+    - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 ## Generated Story 3325202526855132928
 * greet
@@ -1132,11 +1145,11 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": ""}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 ## Generated Story -5687885756526430684
 * greet
@@ -1176,11 +1189,11 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": ""}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export
 ## Generated Story -5687885756526430684
 * greet
@@ -1220,11 +1233,11 @@
     - action_restaurant
     - slot{"restraurant_results_for_email_message": ""}
     - utter_ask_should_send_email
-* affirm
-    - utter_ask_email_id
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+* goodbye
+    - utter_goodbye
     - export	
 ## Generated Story -7858389892448489130
 * greet{"location": "hola"}
@@ -1461,10 +1474,6 @@
     - slot{"restraurant_results_for_email_message": "<table border='1'>\n<tr>\n<td> <b> Restraurant Name </b> </td>\n<td> <b> Restraurant Location </b> </td>\n<td> <b> Price - Meal for Two </b> </td>\n<td> <b> Rating </b> </td>\n</tr><tr><td>The Saffron Tree</td><td>100, Raja Basanta Roy Road, Southern Avenue</td><td>1000</td><td>4.8</td></tr><tr><td>Spice Kraft</td><td>54/1/2A, Hazra Road, Ballygunge Phari, Near Hazra Law College, Ballygunge, Kolkata</td><td>1200</td><td>4.8</td></tr><tr><td>Barbeque Nation</td><td>1st Floor, 24, Park Center Building, Park Street Area, Kolkata</td><td>1800</td><td>4.8</td></tr><tr><td>JW Kitchen - JW Marriott Hotel Kolkata</td><td>JW Marriott Hotel Kolkata, 4A, J.B.S Haldane Avenue, Science City Area, Kolkata</td><td>3000</td><td>4.6</td></tr><tr><td>Five Mad Men</td><td>Omega Building Of Bengal Intelligence Park, 1st Floor Plot A2, M2 &N2, Block EP &GP, Salt Lake Electronic Complex, Sector 5, Salt Lake, Kolkata</td><td>1000</td><td>4.6</td></tr><tr><td>Chez - Pan Oriental Kitchen</td><td>D/26, Bapuji Nagar, Near Ekta Heights Building,  Baghajatin, Kolkata</td><td>800</td><td>4.6</td></tr><tr><td>What's Up</td><td>122A, Southern Avenue, Kolkata</td><td>1000</td><td>4.5</td></tr><tr><td>The Awadh Restaurant</td><td>17, Park Circus Area, Kolkata</td><td>1200</td><td>4.5</td></tr><tr><td>Carpe Diem</td><td>18M Park Street Area, Kolkata</td><td>1000</td><td>4.5</td></tr><tr><td>Tram Deepo</td><td>45, 2nd Floor, Syed Amir Ali Avenue, Near Quest Mall, Ballygunge, Kolkata</td><td>1200</td><td>3.9</td></tr></table>"}
     - utter_ask_should_send_email
 * deny
-    - utter_ask_email_id
-* restaurant_search{"email": "hrudaya21@gmail.com"}
-    - slot{"email": "hrudaya21@gmail.com"}
-    - send_email
 * goodbye
     - utter_goodbye
     - export
@@ -1487,10 +1496,6 @@
     - slot{"restraurant_results_for_email_message": "<table border='1'>\n<tr>\n<td> <b> Restraurant Name </b> </td>\n<td> <b> Restraurant Location </b> </td>\n<td> <b> Price - Meal for Two </b> </td>\n<td> <b> Rating </b> </td>\n</tr><tr><td>Mitron - Peninsula Grand Hotel</td><td>Hotel Peninsula Grand, Rooftop, Opposite Sakinaka Metro Station, Andheri Airport Road, Sakinaka, Mumbai</td><td>800</td><td>4.9</td></tr><tr><td>JLWA</td><td>3rd Floor, VN Sphere Turner, Linking Road, Bandra West</td><td>1600</td><td>4.9</td></tr><tr><td>Tamasha</td><td>Ground Floor, Victoria House, E.B Marg, Lower Parel, Mumbai</td><td>1800</td><td>4.8</td></tr><tr><td>Plum by Bent Chair</td><td>Third Floor, Trade View Building, Kamala Mills Compound, Senapati Bapat Marg, Lower Parel, Mumbai</td><td>1800</td><td>4.8</td></tr><tr><td>R' ADDA</td><td>Ramee Guestline Hotel, 462, A B Nair Road, Juhu, Mumbai</td><td>1200</td><td>4.7</td></tr><tr><td>Lord of the Drinks</td><td>Third Floor, Trade View Building, Kamala Mills Compound, Senapati Bapat Marg, Lower Parel, Mumbai</td><td>1500</td><td>4.7</td></tr><tr><td>HITCHKI</td><td>5, Transocean, Hiranandani Business Park, Lake Boulevard Road, Powai, Mumbai</td><td>1200</td><td>4.7</td></tr><tr><td>Carter Road Social</td><td>21, Gagangiri CHS Ltd, Carter Road, Bandra West, Mumbai</td><td>1400</td><td>4.6</td></tr><tr><td>House Of Tipsy</td><td>3/4, Dheeraj Pali Arcade, Dr. Ambedkar Road, Pali Naka, Pali Hill, Bandra West</td><td>1800</td><td>4.5</td></tr><tr><td>BKC  DIVE</td><td>Ground Floor, Pinnacle Corporate Park, Next To Trade Centre, Opposite MTNL Office, Bandra Kurla Complex, Mumbai</td><td>1000</td><td>4.5</td></tr></table>"}
     - utter_ask_should_send_email
 * deny
-    - utter_ask_email_id
-* restaurant_search{"email": "hrudaya21@gmail.com"}
-    - slot{"email": "hrudaya21@gmail.com"}
-    - send_email
 * goodbye
     - utter_goodbye
     - export
@@ -1512,3 +1517,54 @@
 * goodbye
     - utter_goodbye
     - export
+## Generated Story 7771344804806408635
+* greet
+    - utter_greet
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "<table border='1'>\n<tr>\n<td> <b> Restraurant Name </b> </td>\n<td> <b> Restraurant Location </b> </td>\n<td> <b> Price - Meal for Two </b> </td>\n<td> <b> Rating </b> </td>\n</tr><tr><td>Byg Brewski Brewing Company</td><td>Behind MK Retail, Sarjapur Road, Bangalore</td><td>1600</td><td>4.9</td></tr><tr><td>The Black Pearl</td><td>20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore</td><td>1500</td><td>4.7</td></tr><tr><td>Byg Brewski Brewing Company</td><td>22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore</td><td>1600</td><td>4.7</td></tr><tr><td>Brew and Barbeque - A Microbrewery Pub</td><td>36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore</td><td>1400</td><td>4.7</td></tr><tr><td>Big Pitcher</td><td>LR Arcade,4121, Old Airport Road, Bangalore</td><td>1800</td><td>4.7</td></tr><tr><td>The Reservoire</td><td>17th Main Road, JNC Road, Koramangala 5th Block, Bangalore</td><td>1300</td><td>4.5</td></tr><tr><td>XOOX Brewmill</td><td>8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore</td><td>1500</td><td>4.4</td></tr><tr><td>Stories</td><td>Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore</td><td>1000</td><td>4.3</td></tr><tr><td>Bombay Adda</td><td>6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore</td><td>1100</td><td>4.3</td></tr></table>"}
+    - utter_ask_should_send_email
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
+    - send_email
+## Generated Story 7293205124992999431
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "chinese", "location": "bangalore"}
+    - slot{"cuisine": "chinese"}
+    - slot{"location": "bangalore"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "700"}
+    - slot{"pricerange": "700"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "<table border='1'>\n<tr>\n<td> <b> Restraurant Name </b> </td>\n<td> <b> Restraurant Location </b> </td>\n<td> <b> Price - Meal for Two </b> </td>\n<td> <b> Rating </b> </td>\n</tr><tr><td>Byg Brewski Brewing Company</td><td>Behind MK Retail, Sarjapur Road, Bangalore</td><td>1600</td><td>4.9</td></tr><tr><td>The Black Pearl</td><td>20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore</td><td>1500</td><td>4.7</td></tr><tr><td>Byg Brewski Brewing Company</td><td>22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore</td><td>1600</td><td>4.7</td></tr><tr><td>Brew and Barbeque - A Microbrewery Pub</td><td>36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore</td><td>1400</td><td>4.7</td></tr><tr><td>Big Pitcher</td><td>LR Arcade,4121, Old Airport Road, Bangalore</td><td>1800</td><td>4.7</td></tr><tr><td>The Reservoire</td><td>17th Main Road, JNC Road, Koramangala 5th Block, Bangalore</td><td>1300</td><td>4.5</td></tr><tr><td>XOOX Brewmill</td><td>8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore</td><td>1500</td><td>4.4</td></tr><tr><td>Stories</td><td>Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore</td><td>1000</td><td>4.3</td></tr><tr><td>Bombay Adda</td><td>6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore</td><td>1100</td><td>4.3</td></tr></table>"}
+    - utter_ask_should_send_email
+* affirm
+    - utter_ask_email_id
+* restaurant_search{"email": "hrudaya21@gmail.com"}
+    - slot{"email": "hrudaya21@gmail.com"}
+    - send_email
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "chinese", "location": "bangalore", "pricerange": "700"}
+    - slot{"cuisine": "chinese"}
+    - slot{"location": "bangalore"}
+    - slot{"pricerange": "700"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "<table border='1'>\n<tr>\n<td> <b> Restraurant Name </b> </td>\n<td> <b> Restraurant Location </b> </td>\n<td> <b> Price - Meal for Two </b> </td>\n<td> <b> Rating </b> </td>\n</tr><tr><td>Byg Brewski Brewing Company</td><td>Behind MK Retail, Sarjapur Road, Bangalore</td><td>1600</td><td>4.9</td></tr><tr><td>The Black Pearl</td><td>20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore</td><td>1500</td><td>4.7</td></tr><tr><td>Byg Brewski Brewing Company</td><td>22/123, Byrathi Village, Bidarahalli Hobli, Hennur, Bangalore</td><td>1600</td><td>4.7</td></tr><tr><td>Brew and Barbeque - A Microbrewery Pub</td><td>36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore</td><td>1400</td><td>4.7</td></tr><tr><td>Big Pitcher</td><td>LR Arcade,4121, Old Airport Road, Bangalore</td><td>1800</td><td>4.7</td></tr><tr><td>The Reservoire</td><td>17th Main Road, JNC Road, Koramangala 5th Block, Bangalore</td><td>1300</td><td>4.5</td></tr><tr><td>XOOX Brewmill</td><td>8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore</td><td>1500</td><td>4.4</td></tr><tr><td>Stories</td><td>Shop 77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore</td><td>1000</td><td>4.3</td></tr><tr><td>Bombay Adda</td><td>6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore</td><td>1100</td><td>4.3</td></tr></table>"}
+    - utter_ask_should_send_email
+* deny
+    - utter_goodbye
