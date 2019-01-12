@@ -17,6 +17,7 @@
 * restaurant_search{"email": "hrishikesh.r.desai@gmail.com"}
     - slot{"email": "hrishikesh.r.desai@gmail.com"}
     - send_email
+	
 
 
 ## Generated Story 7571176434215927340
@@ -37,7 +38,7 @@
     - utter_ask_should_send_email
 * deny
 
-    - export	
+    	
 ## Generated Story 5793991498973845777
 * greet
     - utter_greet
@@ -59,7 +60,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
-    - export	
+    	
 
 ## Generated Story -4119916223930012371
 * greet{"location": "hola"}
@@ -83,7 +84,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 
 
 ## Generated Story 4371494193400271207
@@ -107,7 +108,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
-    - export
+    
 
 ## Generated Story -6574399902414284621
 * greet
@@ -132,7 +133,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 	
 ## Generated Story 8455316801529394086
 * greet
@@ -157,7 +158,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story 8614594228142126930
 * greet
     - utter_greet
@@ -180,7 +181,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
-    - export
+    
 
 ## Generated Story 1806342198547553734
 * greet{"location": "hola"}
@@ -199,7 +200,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 
 ## Generated Story 4508088622285753629
 * greet
@@ -219,7 +220,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 
 ## Generated Story -3143433703116657356
 * greet
@@ -241,7 +242,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -5669288759055082475
 * greet
     - utter_greet
@@ -263,7 +264,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 
 ## Generated Story 8414988504950852106
 * greet
@@ -288,7 +289,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story 4887725827197572356
 * greet
     - utter_greet
@@ -312,7 +313,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 * greet
     - utter_greet
 * restaurant_search
@@ -335,7 +336,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -4361798139229803469
 * greet
     - utter_greet
@@ -359,6 +360,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
 
 ## Generated Story 8340272776975179895
 * greet
@@ -383,7 +385,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -636448589031215344
 * greet
     - utter_greet
@@ -407,7 +409,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -2716849534532737595
 * greet
     - utter_greet
@@ -432,6 +434,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
 * greet
     - utter_greet
 * restaurant_search
@@ -454,6 +457,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "nice"}
@@ -475,9 +479,10 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
 * goodbye
     - utter_goodbye
-    - export
+    
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "nice"}
@@ -501,6 +506,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
 * greet
     - utter_greet
 * restaurant_search
@@ -523,7 +529,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "nice"}
@@ -547,7 +553,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 * greet
     - utter_greet
 * restaurant_search
@@ -569,6 +575,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
 ## Generated Story -2716849534532737595
 * greet
     - utter_greet
@@ -593,6 +600,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
 * greet
     - utter_greet
 * restaurant_search
@@ -615,7 +623,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "nice"}
@@ -639,7 +647,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "nice"}
@@ -663,7 +671,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 * greet
     - utter_greet
 * restaurant_search
@@ -686,6 +694,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "nice"}
@@ -709,6 +718,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
 * greet
     - utter_greet
 * restaurant_search
@@ -730,7 +740,8 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
+	
 * greet
     - utter_greet
 * restaurant_search
@@ -741,7 +752,7 @@
     - slot{"location": "ahmedabad"}
     - utter_ask_cuisine
 * restaurant_search
-    - export
+    
 
 ## Generated Story 8742619952400058011
 * greet
@@ -766,6 +777,8 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
+	
 * greet
     - utter_greet
 * restaurant_search
@@ -788,7 +801,8 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
+	
 * greet
     - utter_greet
 * restaurant_search
@@ -811,6 +825,8 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
+	
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "nice"}
@@ -834,7 +850,8 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
+	
 * greet
     - utter_greet
 * restaurant_search
@@ -879,7 +896,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -6992475329185366927
 * greet
     - utter_greet
@@ -899,7 +916,8 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
-    - export
+    
+	
 ## Generated Story 6342505704568343235
 * greet
     - utter_greet
@@ -919,7 +937,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -1289030032490395016
 * greet
     - utter_greet
@@ -937,7 +955,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
-    - export
+    
 ## Generated Story 3157057833187783964
 * greet
     - utter_greet
@@ -955,7 +973,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "chinese", "location": "bangalore", "pricerange": "700", "email": "hrudaya21@gmail.com"}
@@ -973,7 +991,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
-    - export
+    
 ## Generated Story 6690436840854442928
 * greet
     - utter_greet
@@ -991,7 +1009,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story 3325202526855132928
 * greet
     - utter_greet
@@ -1013,7 +1031,7 @@
 * deny
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story 8467491363686640672
 * greet
     - utter_greet
@@ -1054,6 +1072,8 @@
     - utter_ask_budget
 * goodbye
     - utter_goodbye
+	
+	
 * greet
     - utter_greet
 * restaurant_search{"location": "bangalore", "pricerange": "700"}
@@ -1069,7 +1089,7 @@
     - utter_ask_should_send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -4455684189492410837
 * greet
     - utter_greet
@@ -1097,7 +1117,7 @@
 * deny
 * goodbye
     - utter_goodbye
-    - export
+    
 
 ## Generated Story 7020414661036337744
 * greet
@@ -1128,7 +1148,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -5687885756526430684
 * greet
     - utter_greet
@@ -1150,7 +1170,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -5687885756526430684
 * greet
     - utter_greet
@@ -1172,7 +1192,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
-    - export
+    
 ## Generated Story -5687885756526430684
 * greet
     - utter_greet
@@ -1194,7 +1214,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -5687885756526430684
 * greet
     - utter_greet
@@ -1216,7 +1236,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
-    - export
+    
 ## Generated Story -5687885756526430684
 * greet
     - utter_greet
@@ -1238,7 +1258,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export	
+    	
 ## Generated Story -7858389892448489130
 * greet{"location": "hola"}
     - slot{"location": "hola"}
@@ -1261,6 +1281,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
 ## Generated Story -6720322336988311042
 * greet
     - utter_greet
@@ -1286,6 +1307,7 @@
     - send_email
 * goodbye
     - utter_goodbye	
+	
 
 ## Generated Story -5006001434080967388
 * greet
@@ -1310,7 +1332,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -8059867068095969981
 * greet
     - utter_greet
@@ -1339,7 +1361,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 	
 ## Generated Story -8895424187800639138
 * greet
@@ -1356,7 +1378,7 @@
     - slot{"restraurant_results_for_email_message": "<table border='1'>\n<tr>\n<td> <b> Restraurant Name </b> </td>\n<td> <b> Restraurant Location </b> </td>\n<td> <b> Price - Meal for Two </b> </td>\n<td> <b> Rating </b> </td>\n</tr><tr><td>Bhena Da Dhaba</td><td>SCF 1, Phase 5, Mohali\nNear P.T.L. LIGHT POINT \n(PUNJAB TRACTOR LTD.)</td><td>250</td><td>3.8</td></tr></table>"}
     - utter_ask_should_send_email
 * affirm
-    - export
+    
 	
 ## Generated Story -2941606674492578074
 * greet{"location": "hola"}
@@ -1382,7 +1404,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -3454328211532327734
 * greet
     - utter_greet
@@ -1405,7 +1427,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -1768727931407917541
 * greet{"location": "hola"}
     - slot{"location": "hola"}
@@ -1430,7 +1452,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -628339774967404618
 * greet
     - utter_greet
@@ -1456,7 +1478,7 @@
     - send_email
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -1029740409939403728
 * greet
     - utter_greet
@@ -1476,7 +1498,7 @@
 * deny
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story 5883706087508893027
 * greet
     - utter_greet
@@ -1498,7 +1520,7 @@
 * deny
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story -3444613021654089763
 * greet
     - utter_greet
@@ -1516,7 +1538,7 @@
 * deny
 * goodbye
     - utter_goodbye
-    - export
+    
 ## Generated Story 7771344804806408635
 * greet
     - utter_greet
@@ -1536,6 +1558,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
 ## Generated Story 7293205124992999431
 * greet
     - utter_greet
@@ -1555,6 +1578,7 @@
 * restaurant_search{"email": "hrudaya21@gmail.com"}
     - slot{"email": "hrudaya21@gmail.com"}
     - send_email
+	
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "chinese", "location": "bangalore", "pricerange": "700"}
@@ -1568,3 +1592,23 @@
     - utter_ask_should_send_email
 * deny
     - utter_goodbye
+	
+## Generated Story 693419185980708909
+* greet
+    - utter_greet
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - verify_location
+    - slot{"location": "bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"pricerange": "300 to 700"}
+    - slot{"pricerange": "300 to 700"}
+    - action_restaurant
+    - slot{"restraurant_results_for_email_message": "<table border='1'>\n<tr>\n<td> <b> Restraurant Name </b> </td>\n<td> <b> Restraurant Location </b> </td>\n<td> <b> Price - Meal for Two </b> </td>\n<td> <b> Rating </b> </td>\n</tr><tr><td>Shanmukha</td><td>1313, Near Bangalore Central Mall, 25th Main, 9th Block, Jayanagar, Bangalore</td><td>600</td><td>4.3</td></tr></table>"}
+    - utter_ask_should_send_email
+* deny
+    - utter_goodbye
+    
