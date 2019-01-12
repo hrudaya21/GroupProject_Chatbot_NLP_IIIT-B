@@ -1147,6 +1147,35 @@
             "entity": "pricerange"
           }
         ]
+      },
+      {
+        "text": "<300",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 1,
+            "end": 4,
+            "value": "300",
+            "entity": "pricerange"
+          }
+        ]
+      },
+      {
+        "text": ">700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 1,
+            "end": 4,
+            "value": "700",
+            "entity": "pricerange"
+          }
+        ]
+      },
+      {
+        "text": "no, thanks",
+        "intent": "deny",
+        "entities": []
       }
     ]
   }
