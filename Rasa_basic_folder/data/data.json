@@ -18,9 +18,9 @@
       {
         "value": "chinese",
         "synonyms": [
-          "chines",
-		  "Chinese",
-          "Chines"
+          "Chinese",
+          "Chines",
+          "chines"
         ]
       },
       {
@@ -1234,6 +1234,30 @@
         "text": "no, thanks",
         "intent": "deny",
         "entities": []
+      },
+      {
+        "text": "I will prefer thai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "thai",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "300-700 range",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "300-700",
+            "entity": "pricerange"
+          }
+        ]
       }
     ]
   }
